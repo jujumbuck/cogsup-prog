@@ -15,22 +15,6 @@ You can accept all default installation options.
 
 ---
 
-## R and RStudio
-
-- **R** is a programming language specialized for statistical data analysis. Download and install it from [CRAN](https://cran.rstudio.com/), accepting the default installation options.  
-- **RStudio** is an Integrated Development Environment (IDE) for R that simplifies the use of RMarkdown. Download and install the free version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/), also accepting the defaults.  
-
----
-
-## Praat Speech Editor
-
-Download [Praat](https://www.fon.hum.uva.nl/praat/), a speech analysis tool.  
-
-- **Windows users:** extract `praat.exe` from the downloaded ZIP file.  
-- When launching Praat, Windows Defender may issue a warning. This is safe to ignore, so just run the program.  
-
----
-
 ## Git
 
 Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for version control, following the platform-specific instructions at the link provided. 
@@ -114,7 +98,7 @@ Install it with:
 pip install expyriment
 ```
 
-Initialize it by running:  
+Next, download the sample experiments and additional plugins in [Expyriment stash](https://github.com/expyriment/expyriment-stash/) by running:  
 
 ```bash
 expyriment -D
@@ -124,4 +108,42 @@ When prompted:
 - Type `all`  
 - Then type `master`  
 
-to select all contents from the master branch.  
+to select all contents from the master branch.
+
+---
+## Praat Speech Editor
+
+Download [Praat](https://www.fon.hum.uva.nl/praat/), a speech analysis tool.  
+
+- **Windows users:** extract `praat.exe` from the downloaded ZIP file.  
+- When launching Praat, Windows Defender may issue a warning. This is safe to ignore, so just run the program.  
+
+---
+
+## R and RStudio
+
+- **R** is a programming language specialized for statistical data analysis. Download and install it from [CRAN](https://cran.rstudio.com/), accepting the default installation options.  
+- **RStudio** is an Integrated Development Environment (IDE) for R that simplifies the use of RMarkdown. Download and install the free version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/), also accepting the defaults.  
+
+---
+
+## Jupyter Notebook with R (IRkernel)
+
+To run R inside Jupyter notebooks, you must install the **IRkernel**.  
+
+1. Make sure Jupyter is already installed (see previous section).  
+2. Open **R** (from RStudio or terminal) and run the following commands:  
+
+```r
+install.packages('IRkernel')
+IRkernel::installspec(user = FALSE)
+```
+
+This registers R as a kernel in Jupyter.  
+
+3. Verify installation:  
+   - Start Jupyter Notebook with:  
+     ```bash
+     jupyter notebook
+     ```  
+   - In the notebook interface, click **New** and check that **R** appears as an available kernel.  
