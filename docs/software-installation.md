@@ -113,8 +113,7 @@ to select all contents from the master branch.
 
 Download [Praat](https://www.fon.hum.uva.nl/praat/), a speech analysis tool.  
 
-- **Windows users:** extract `praat.exe` from the downloaded ZIP file.  
-- When launching Praat, Windows Defender may issue a warning. This is safe to ignore, so just run the program.  
+- **Windows:** Extract `praat.exe` from the downloaded ZIP file.  When launching Praat, Windows Defender may issue a warning. This is safe to ignore, so just run the program.  
 
 ---
 
