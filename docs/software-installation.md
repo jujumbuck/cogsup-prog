@@ -8,10 +8,8 @@ Before starting:
 
 ## Visual Studio Code
 
-Download and install [Visual Studio Code](https://code.visualstudio.com/download) as your code editor.  
 (If you already use another editor such as Sublime Text, Notepad++, Spyder, or PyCharm, you may skip this step.)  
-
-You can accept all default installation options.  
+Download and install [Visual Studio Code](https://code.visualstudio.com/download) as your code editor. You can accept all default installation options.   
 
 ---
 
@@ -19,7 +17,7 @@ You can accept all default installation options.
 
 Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for version control, following the platform-specific instructions at the link provided. 
 
-> **Note (Windows only):** During installation:  
+> **Note (Windows only)** During the installation:  
 > - In *Choosing the default editor used by Git*, select `Use Notepad`.  
 > - In *Adjusting your PATH environment*, select `Use Git and optional Unix tools...`.  
 > - In *Configuring the terminal emulator*, select `Use MinTTY`.  
