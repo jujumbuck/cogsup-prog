@@ -33,9 +33,7 @@ Download [Praat](https://www.fon.hum.uva.nl/praat/), a speech analysis tool.
 
 ## Git
 
-Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for version control.  
-
-- **Windows:** download [Git for Windows](https://git-scm.com/download/win).  
+Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for version control, following the platform-specific instructions at the link provided. 
 
 > **Note (Windows only):** During installation:  
 > - In *Choosing the default editor used by Git*, select `Use Notepad`.  
@@ -72,15 +70,17 @@ git config --global core.editor nano
        echo "alias python='winpty python.exe'" >> ~/.bash_profile
        ```  
        Press `Enter`, then close and reopen Git Bash.  
+
      - Type `python` and press `Enter`.  
 
-       - If you see:  
+        - If you see this:
          ```bash
          python: command not found
          ```  
          follow the instructions at [Real Python](https://realpython.com/add-python-to-path/) to add Python to your `PATH`.  
+
        - Otherwise, you should see:  
-         ```
+         ```bash
          Python 3.13.5 (main, Jun 16 2025, 17:39:28) [GCC 11.4.0] on Windows
          Type "help", "copyright", "credits" or "license" for more information.
          >>> 
@@ -88,7 +88,7 @@ git config --global core.editor nano
          Exit the interpreter by typing `quit()` and pressing `Enter`.  
 
    - **macOS / Linux:**  
-     - Open **Terminal** (`⌘ + Space` → type `terminal` on macOS, or `Ctrl + Alt + T` on Linux).  
+     - Open **Terminal** (`⌘ + Space` → type `terminal` on macOS, `Ctrl + Alt + T` on Linux).  
      - Type `python` and press `Enter`.  
      - You should see a similar version message as above. Exit with `quit()`.  
 
