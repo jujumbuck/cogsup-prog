@@ -83,7 +83,7 @@ git config --global core.editor nano
 Install commonly used scientific libraries by running:  
 
 ```bash
-pip install ipython jupyter numpy matplotlib pandas seaborn
+pip install ipython jupyter numpy matplotlib pandas seaborn scikit-image
 ```
 
 ---
