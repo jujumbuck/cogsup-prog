@@ -23,7 +23,7 @@ Download the course materials using Git by entering the following command line i
 
     git clone https://github.com/barburevencu/PPE
 
-You should see a message ``Cloning into 'PCBS'...`` and, if everything goes well, all the
+You should see a message ``Cloning into 'PPE'...`` and, if everything goes well, all the
 course materials (python scripts, data files, ...) should be downloaded in a new subdirectory called ``PCBS``, within the current working directory. You can cd into it and list its content:
 
 .. code-block:: bash
@@ -34,7 +34,7 @@ course materials (python scripts, data files, ...) should be downloaded in a new
 
 Your Terminal window should more or less look like this:
 
-.. image:: images/term-git-clone-pcbs.png
+.. image:: ![alt text](<Screenshot 2025-08-25 at 14.41.17.png>)
   :width: 600
   :alt: Terminal showing the results of git clone...
 
