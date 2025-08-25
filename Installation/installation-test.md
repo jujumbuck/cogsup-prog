@@ -69,6 +69,7 @@ To check the code, launch the Visual Code editor and open the python file ``PPE/
 [Pygame](https://www.pygame.org/news) is a Python library to create simple audio visual games. 
 
 While still in the ```PPE/Installation/Test``` directory, launch the python script `pygame-test.py`.
+
 ![alt text](Test/Images/hering.png)
 
 ---
