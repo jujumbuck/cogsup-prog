@@ -72,6 +72,7 @@ try:
 
         is_correct_answer = (trial.get_factor('is_even') and key == EVEN_RESPONSE_KEY) or \
                             (not trial.get_factor('is_even') and key == ODD_RESPONSE_KEY)
+        
         if not is_correct_answer:
             feedback.play()
 
@@ -90,4 +91,3 @@ finally:
 
     if os.path.exists(data_dir):
         shutil.rmtree(data_dir)
-        print(f"Deleted folder: {data_dir}")
