@@ -68,7 +68,7 @@ To check the code, launch the Visual Code editor and open the python file ``PPE/
 ## Check pygame
 [Pygame](https://www.pygame.org/news) is a Python library to create simple audio visual games. 
 
-While still in the ```PPE/Installation/Test``` directory, launch the python script `pygame-test.py`.
+While still in the ```PPE/Installation/Test``` directory, launch the python script `pygame-test.py`.  
 
 ![alt text](Test/Images/hering.png)
 
@@ -88,11 +88,22 @@ This should run a quick experiment where you must check whether a number is odd 
 ---
 
 ## Check Jupyter
+### Python
+Navigate to the `PPE/Installation/Test/Installation` folder, then open the `python-jupyter-test.ipynb` file. If it doesn't open in VS Code by default, right-click on the file and open it with VS Code.
+
+Drag your mouse to the left of the first code-containing box and click on the ⏵ button. VS Code will prompt you to select a kernel. Choose the python version installed during the software installation process. This will fix your program to interactive-python for the current session. The VS Code window should look something like this:
+
+![alt text](Test/Images/jupyter-python.png)
+
+Once you see 32 printed out, scroll down to the other code-containing boxes and run them in the same way.
+
+### R
+Open the `r-jupyter-test.ipynb` file in VS Code. When prompted to choose a kernel, click on `Select another kernel...` → `Jupyter kernel...` → `R`. Once you've selected the kernel, run all cells, just as you did for the python script.
 
 ---
 
 ## Keep the course material on your directory up to date
-The course materials will be updated regularly. To make sure you have the latest version, synchronize your local copy with [the course github repository](https://github.com/barburevencu/PPE), with the commands:
+The course materials will be updated regularly. To make sure you have the latest version, synchronize your local copy with [the course github repository](https://github.com/barburevencu/PPE), with the following commands:
 
 ```bash
 cd ~/PPE
