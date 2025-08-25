@@ -1,18 +1,10 @@
-.. _check:
-
-***********************
-Check your installation  
-***********************
-
-.. contents:: :depth: 2
-
-
 Check R and Rstudio
 -------------------
 
 Launch Rstudio, and in the Console (left window), type::
-
-   example(density)
+```r
+example(density)
+```
 
 This should display a series of graphics (Press `Enter` to advance). Close RStudio.
 	      
@@ -23,117 +15,56 @@ Download the course materials using Git by entering the following command line i
 
     git clone https://github.com/barburevencu/PPE
 
-You should see a message ``Cloning into 'PPE'...`` and, if everything goes well, all the
-course materials (python scripts, data files, ...) should be downloaded in a new subdirectory called ``PCBS``, within the current working directory. You can cd into it and list its content:
+You should see a message ``Cloning into 'PPE'...`` and, if everything goes well, all the currently available
+course materials (python scripts, data files, ...) should be downloaded in a new subdirectory called ``PPE``, within the current working directory. You can cd into it and list its content:
 
-.. code-block:: bash
-
-    cd PCBS
-    pwd
-    ls
+```bash
+cd PPE ### Changes the current working directory to the PPE folder
+pwd ### Displays the address of the current working directory
+ls ### Lists the contents of the current working directory
+```
 
 Your Terminal window should more or less look like this:
 
-.. image:: ![alt text](<Screenshot 2025-08-25 at 14.41.17.png>)
-  :width: 600
-  :alt: Terminal showing the results of git clone...
+![alt text](<Screenshot 2025-08-25 at 14.41.17.png>)
 
-
-.. warning::
-   If a folder named ``PCBS`` already exists in the current working
-   directory, git will stop and will not download the content of the remote PCBS
-   repository. In that case, you must delete or move the existing ``PCBS`` folder
+**Warning**
+   If a folder named ``PPE`` already exists in the current working
+   directory, git will stop and will not download the content of the remote PPE
+   repository. In that case, you must delete or move the existing ``PPE`` folder
    before running the ``git clone`` command above.
 
-   When you open a Terminal, the current working directory is your “home”, or
-   “user”, directory, until you start navigating in the filesystem with the ``cd
-   (change directory)`` command. If you are lost at this point, read `Navigating
-   the file system <http://linuxcommand.sourceforge.net/lc3_lts0020.php>`_.
-
+   When you open a Terminal, the current working directory is your Home/User
+   directory, until you start navigating the file system with the `cd`
+   (change directory) command.
 
 Check Python
 ------------
 
-This tests if Python3 is installed and correctly configured.
+Assuming you are in the PPE directory, navigate to the Test folder, then run the following python script and play the game in the Terminal.
 
-.. code-block:: bash
+```bash
+cd Test
+python human-guess-a-number.py
+```
 
-    cd ~/PCBS/games
-    python human-guess-a-number.py
-
-
-.. image:: images/guess-number.png
-   :width: 600
-
-.. warning::
-  If you receive an error message such as ``bash: python: No such file or directory``, and you are sure that python is installed, the most likely reason is that the problems lies with the `PATH environment variable <https://linuxhint.com/path_in_bash/>`__) listing all the directories: the directory containing the python executable file may be missing from the list. This happens for example, if you run the Anaconda3 installer and did not check the relevant box. 
+To go back one directory up the hierarchy, type `cd ..` in the Terminal.
 
 Check basic graphics
 --------------------
+Make sure (for instance, by using `pwd`) that you are in the ```PPE/Test``` directory. Then, type:
 
-.. code-block:: bash
+```bash
+python koch.py
+```
+![alt text](image.png)
 
-  cd ~/PCBS/simulations/fractals
-  python koch0.py
-
-.. image:: images/koch0.png
-     :width: 600
-
-You can launch the Visual Code editor and open the python file ``PCBS/simulations/fractals/koch0.py`` to check the code. 
-	     
-
-
-Check matplotlib
-----------------
-
-matplotlib is a python library to create and display graphics.
-Here, we try to generate some graphical effects to check that this library has been correctly installed.
-
-.. code-block:: bash
-
-    cd ~/PCBS/stimuli/visual
-
-.. code-block:: bash
-
-
-   python bullseye.py
-
-.. image:: images/bullseye.png
-     :width: 300
-
-.. code-block:: bash
-
-    python contrast_modulated_grating.py
-
-.. image:: images/contrast-modulated.png
-     :width: 300
-
-.. code-block:: bash
-
-    python gabor.py
-
-
-.. image:: images/gabor.png
-     :width: 300
-
-.. code-block:: bash
-
-    python image-manipulation.py
-
-
-.. image:: images/image-manip.png
-     :width: 600
-
-.. code-block:: bash
-
-   python wedgering.py
-
-.. image:: images/wedge-ring.png
+To check the code, launch the Visual Code editor and open the python file ``PPE/test/koch.py``. 
 
 Check pygame
 ------------
 
-`Pygame <http://www.pygame.org>`__ is a Python library to create simple audio visual games. It was installed along with expyriment. If you had to create a Python virtual environment when you installed expyriment, you need to activate it::
+`Pygame <http://www.pygame.org>`__ is a Python library to create simple audiovisual games. It was installed along with expyriment. If you had to create a Python virtual environment when you installed expyriment, you need to activate it::
 
   conda activate expyriment  # if you use conda
   pyenv activate expyriment  # if you use standard python with pyenv
