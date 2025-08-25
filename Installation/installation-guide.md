@@ -137,4 +137,4 @@ install.packages('IRkernel')
 IRkernel::installspec(user = FALSE)
 ```
 
-This registers R as a kernel in Jupyter.  
+This makes R usable in Jupyter notebooks.  

@@ -8,6 +8,7 @@ example(density)
 ```
 
 This should display a series of graphics (Press `Enter` to advance). Close RStudio.
+
 ---
 
 ## Check Git
@@ -38,6 +39,7 @@ Your Terminal window should more or less look like this:
    When you open a Terminal, the current working directory is your Home/User
    directory, until you start navigating the file system with the `cd`
    (change directory) command.
+
 ---
 
 ## Check Python
@@ -48,6 +50,7 @@ Assuming you are in the PPE directory, navigate to the Test folder, then run the
 cd Installation/Test
 python python-basic-test.py
 ```
+
 ---
 
 ## Check basic graphics
@@ -59,6 +62,7 @@ python python-graphics-test.py
 ![alt text](Test/Images/koch.png)
 
 To check the code, launch the Visual Code editor and open the python file ``PPE/Installation/Test/koch.py``. 
+
 ---
 
 ## Check pygame
@@ -66,6 +70,7 @@ To check the code, launch the Visual Code editor and open the python file ``PPE/
 
 While still in the ```PPE/Installation/Test``` directory, launch the python script `pygame-test.py`.
 ![alt text](Test/Images/hering.png)
+
 ---
 
 ## Check Expyriment
@@ -78,12 +83,12 @@ While still in the ```PPE/Installation/Test``` directory, launch the python scri
    ```
    
 This should run a quick experiment where you must check whether a number is odd or even.
+
 ---
 
 ## Check Jupyter
 
 ---
-
 
 ## Keep the course material on your directory up to date
 The course materials will be updated regularly. To make sure you have the latest version, synchronize your local copy with [the course github repository](https://github.com/barburevencu/PPE), with the commands:
@@ -101,4 +106,3 @@ git pull
   simplest course of action, for beginners, is to delete the PPE folder (or
   move it if you wnat to keep a copy of your modifications) and reissue the
   ``git clone`` command above to reload the full folder.
----
