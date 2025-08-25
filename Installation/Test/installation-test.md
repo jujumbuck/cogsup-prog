@@ -14,47 +14,14 @@ Launch Rstudio, and in the Console (left window), type::
 
    example(density)
 
-This should display a series of graphics (Press <Return> to advance).
-
-Then type::
-
-  require(tidyverse)
-
-If the package ``tidyyverse`` is not found, you need to install it with::
-
-  install.packages('tidyverse')
-
-  
-Close RStudio. That will be all.
-  
-    
-Check if Python can be executed in a Terminal
------------------------------------------------
-
-
-Open a Terminal (that is, `Git Bash` for Windows users) and type::
-
-  which python
-
-This should print the location of the python interpreter,  e.g. something like  ``/home/macron/anaconda3/python``
-
-If no message is displayed, the PATH environment variable --- which lists the directories where programs can be found --- is messed up, most probably due not following closely the installation instructions (for Windows users, check the Anaconda and Git for Windows instructions)
-
-Type  ``python`` and press 'Enter'.
-
-You should see a prompt `>>>` followed by a blinking cursor. Python is waiting for your commands! Type::
-
-  2**100
-
-This should display the 100 power of 2. Type ``quit()`` to leave Python and press `Ctrl-D` to close the Terminal. Basic Python is working. 
-
+This should display a series of graphics (Press `Enter` to advance). Close RStudio.
 	      
 Check Git
 ---------
 
 Download the course materials using Git by entering the following command line in a Terminal:: 
 
-    git clone https://github.com/chrplr/PCBS.git
+    git clone https://github.com/barburevencu/PPE
 
 You should see a message ``Cloning into 'PCBS'...`` and, if everything goes well, all the
 course materials (python scripts, data files, ...) should be downloaded in a new subdirectory called ``PCBS``, within the current working directory. You can cd into it and list its content:
