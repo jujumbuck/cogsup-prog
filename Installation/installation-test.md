@@ -26,7 +26,8 @@ ls # Lists the contents of the current working directory
 
 Your Terminal window should more or less look like this:
 
-![alt text](<Images/git.png>)
+![alt text](<./Images/git.png>)
+![Git screenshot](./Images/git.png)
 
 **Warning**
    If a folder named ``PPE`` already exists in the current working
