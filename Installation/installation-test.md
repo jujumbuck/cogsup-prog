@@ -26,7 +26,7 @@ ls # Lists the contents of the current working directory
 
 Your Terminal window should more or less look like this:
 
-![alt text](<git.png>)
+![alt text](<Images/git.png>)
 
 **Warning**
    If a folder named ``PPE`` already exists in the current working
@@ -55,7 +55,7 @@ Make sure (for instance, by using `pwd`) that you are still in the ```PPE/Instal
 ```bash
 python python-graphics-test.py
 ```
-![alt text](koch.png)
+![alt text](Images/koch.png)
 
 To check the code, launch the Visual Code editor and open the python file ``PPE/Installation/Test/koch.py``. 
 
@@ -64,7 +64,7 @@ Check pygame
 [Pygame](https://www.pygame.org/news) is a Python library to create simple audio visual games. 
 
 While still in the ```PPE/Installation/Test``` directory, launch the python script `pygame-test.py`.
-![alt text](hering.png)
+![alt text](Images/hering.png)
 
 Check Expyriment
 ----------------
