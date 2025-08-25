@@ -132,15 +132,9 @@ To run R inside Jupyter notebooks, you must install the **IRkernel**.
 2. Open **R** (from RStudio or terminal) and run the following commands:  
 
 ```r
+install.packages('tidyverse')
 install.packages('IRkernel')
 IRkernel::installspec(user = FALSE)
 ```
 
 This registers R as a kernel in Jupyter.  
-
-3. Verify installation:  
-   - Start Jupyter Notebook with:  
-     ```bash
-     jupyter notebook
-     ```  
-   - In the notebook interface, click **New** and check that **R** appears as an available kernel.  
