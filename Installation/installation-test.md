@@ -91,7 +91,7 @@ This should run a quick experiment where you must check whether a number is odd 
 ### Python
 Navigate to the `PPE/Installation/Test/Installation` folder, then open the `python-jupyter-test.ipynb` file. If it doesn't open in VS Code by default, right-click on the file and open it with VS Code.
 
-Drag your mouse to the left of the first code-containing box and click on the ⏵ button. VS Code will prompt you to select a kernel. Choose the python version installed during the software installation process. This will fix your program to interactive-python for the current session. The VS Code window should look something like this:
+Drag your mouse to the left of the first code-containing box and click on the ⏵ button. VS Code will prompt you to select a kernel. Click on `Python environments...`, then select the python version installed during the software installation process. This will fix python as the kernel (the interpreter) of the current session. The VS Code window should look something like this:
 
 ![alt text](Test/Images/jupyter-python.png)
 

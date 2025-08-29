@@ -109,13 +109,6 @@ When prompted:
 to select all contents from the master branch.
 
 ---
-## Praat Speech Editor
-
-Download [Praat](https://www.fon.hum.uva.nl/praat/), a speech analysis tool.  
-
-- **Windows:** Extract `praat.exe` from the downloaded ZIP file.  When launching Praat, Windows Defender may issue a warning. This is safe to ignore, so just run the program.  
-
----
 
 ## R and RStudio
 
