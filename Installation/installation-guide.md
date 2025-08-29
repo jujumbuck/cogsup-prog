@@ -15,7 +15,17 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/download
 
 ## Git
 
-Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for version control, following the platform-specific instructions at the link provided. 
+1. Create a [GitHub](https://github.com/signup) account if you don't already have one.
+
+2. Create your first repository. In the upper-right corner of any page, select `+`, then click on `New repository`. In the `Repository name` box, type `cogsup-prog`. Make sure your repository is **Public** (this should be the case by default). You can accept the defaults for all the other options. Then, click on `Create repository`.
+
+3. Create an access token—you will need this to update the repository with files and folders from your computer. In the upper-right corner, click on the icon representing your profile, then choose ```Settings```. Scroll down until you see ```Developer settings``` on the lefthand menu, and click on it. 
+
+On the left, click on ```Personal access tokens```, then select ```Tokens (classic)```. 
+
+Click on the ```Generate new token``` button, then choose the first option (```Generate new token: Fine-grained, repo-scoped```). Select a token name (e.g., 'programming'), select ```No expiration``` under **Expiration** and  ```All repositories``` under **Repository access**. Click on ```Generate token```, then make sure to copy the generated token and paste it somewhere where you can retrieve it later.
+
+4. Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for version control, following the platform-specific instructions at the link provided. 
 
 > **Note (Windows only)** During the installation:  
 > - In *Choosing the default editor used by Git*, select `Use Notepad`.  
@@ -23,7 +33,7 @@ Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for
 > - In *Configuring the terminal emulator*, select `Use MinTTY`.  
 > - You may keep defaults for all other options.  
 
-After installation, open a terminal:  
+4. After installation, open a terminal:  
 - **Windows:** start **Git Bash**  
 - **macOS:** open **Terminal** (via Spotlight: `⌘ + Space` → type `terminal`)  
 - **Linux:** open **Terminal** (`Ctrl + Alt + T`)  
