@@ -31,7 +31,7 @@ After installation, open a terminal:
 Configure your Git identity (replace placeholders with your own details):  
 
 ```bash
-git config --global user.name "Firstname Lastname"
+git config --global user.name "first_name last_name"
 git config --global user.email "your_email"
 git config --global core.editor nano
 ```
