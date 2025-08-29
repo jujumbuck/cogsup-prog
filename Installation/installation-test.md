@@ -13,9 +13,12 @@ This should display a series of graphics (Press `Enter` to advance). Close RStud
 
 ## Check Git
 
+### Our course repository
 Download the course materials using Git by entering the following command line in a Terminal:: 
 
-    git clone https://github.com/barburevencu/PPE
+```bash
+git clone https://github.com/barburevencu/PPE
+```
 
 You should see a message ``Cloning into 'PPE'...`` and, if everything goes well, all the currently available
 course materials (python scripts, data files, ...) should be downloaded in a new subdirectory called ``PPE``, within the current working directory. You can cd into it and list its content:
@@ -41,6 +44,26 @@ Your Terminal window should more or less look like this:
    (change directory) command.
 
 ---
+
+### Your course repository
+In the Terminal, use ```cd``` to navigate to a folder on your computer that you will use for the class. (Make sure it's a different folder from the PPE folder corresponding to the course repository.) Then, enter:
+
+```bash
+git clone https://github.com/your-username/cogsup-prog
+```
+
+In your file manager (e.g., Finder on Mac, File Explorer on Windows), go to the ```PPE``` folder and copy the subfolder called ```Week 0```. Go to the ```cogsup-prog``` folder where you cloned your own repository and paste the ```Week 0``` subfolder.
+
+Back in the terminal, type in:
+```bash
+git add .
+git commit -m "Lecture 0 Slides" # This is a summary of the changes you are making
+git push origin
+```
+
+You will be asked for your username (set up when you've signed up) and for a password. Do not enter your GitHub password, but the long token generated beforehand. This is a one-time process—afterward, the above ```add```, ```commit```, and ```push``` will work automatically.
+
+Go to your GitHub account in your browser and check that your repository account now contains the ```Week 0``` subfolder.
 
 ## Check Python
 
