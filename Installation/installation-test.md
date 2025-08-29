@@ -1,16 +1,5 @@
 # Testing the Software Installation
 
-## Check R and RStudio
-
-Launch RStudio, and in the Console (left window), type::
-```r
-example(density)
-```
-
-This should display a series of graphics (Press `Enter` to advance). Close RStudio.
-
----
-
 ## Check Git
 
 ### Our course repository
@@ -77,7 +66,7 @@ python python-basic-test.py
 
 ---
 
-## Check basic graphics
+### Check basic graphics
 Make sure (for instance, by using `pwd`) that you are still in the ```PPE/Installation/Test``` directory. Then, type:
 
 ```bash
@@ -89,7 +78,7 @@ To check the code, launch the Visual Code editor and open the python file ``PPE/
 
 ---
 
-## Check pygame
+### Check pygame
 [Pygame](https://www.pygame.org/news) is a Python library to create simple audio visual games. 
 
 While still in the ```PPE/Installation/Test``` directory, launch the python script `pygame-test.py`.  
@@ -98,7 +87,7 @@ While still in the ```PPE/Installation/Test``` directory, launch the python scri
 
 ---
 
-## Check Expyriment
+### Check Expyriment
 [Expyriment](https://expyriment.org) is a Python library for designing and conducting behavioural and neuroimaging experiments.
 
 While still in the ```PPE/Installation/Test``` directory, launch the python script `expyriment-test.py`.
@@ -108,6 +97,17 @@ While still in the ```PPE/Installation/Test``` directory, launch the python scri
    ```
    
 This should run a quick experiment where you must check whether a number is odd or even.
+
+---
+
+## Check R and RStudio
+
+Launch RStudio, and in the Console (left window), type::
+```r
+example(density)
+```
+
+This should display a series of graphics (Press `Enter` to advance). Close RStudio.
 
 ---
 
