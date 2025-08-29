@@ -1,8 +1,8 @@
 # Testing the Software Installation
 
-## Check R and Rstudio
+## Check R and RStudio
 
-Launch Rstudio, and in the Console (left window), type::
+Launch RStudio, and in the Console (left window), type::
 ```r
 example(density)
 ```
@@ -52,9 +52,10 @@ In the Terminal, use ```cd``` to navigate to a folder on your computer that you 
 git clone https://github.com/your-username/cogsup-prog
 ```
 
-In your file manager (e.g., Finder on Mac, File Explorer on Windows), go to the ```PPE``` folder and copy the subfolder called ```Week 0```. Go to the ```cogsup-prog``` folder where you cloned your own repository and paste the ```Week 0``` subfolder.
+In your file manager (e.g., Finder on Mac, File Explorer on Windows), go to the ```PPE``` folder and copy the subfolder called ```Week-0```. Go to the ```cogsup-prog``` folder where you cloned your own repository and paste the ```Week-0``` subfolder.
 
 Back in the terminal, type in:
+
 ```bash
 git add .
 git commit -m "Lecture 0 Slides" # This is a summary of the changes you are making
@@ -63,7 +64,7 @@ git push origin
 
 You will be asked for your username (set up when you've signed up) and for a password. Do not enter your GitHub password, but the long token generated beforehand. This is a one-time process—afterward, the above ```add```, ```commit```, and ```push``` will work automatically.
 
-Go to your GitHub account in your browser and check that your repository account now contains the ```Week 0``` subfolder.
+Go to your GitHub account in your browser and check that your repository account now contains the ```Week-0``` subfolder.
 
 ## Check Python
 
