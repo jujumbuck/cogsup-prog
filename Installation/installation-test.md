@@ -38,8 +38,10 @@ Your Terminal window should more or less look like this:
 In the Terminal, use ```cd``` to navigate to a folder on your computer that you will use for the class. (Make sure it's a different folder from the PPE folder corresponding to the course repository.) Then, enter:
 
 ```bash
-git clone https://github.com/your-username/cogsup-prog
+git clone https://github.com/YOUR-GITHUB-USERNAME/cogsup-prog
 ```
+
+(Your GitHub username can be found on any GitHub page in the upper-right corner—click on the icon.)
 
 In your file manager (e.g., Finder on Mac, File Explorer on Windows), go to the ```PPE``` folder and copy the subfolder called ```Week-0```. Go to the ```cogsup-prog``` folder where you cloned your own repository and paste the ```Week-0``` subfolder.
 
@@ -74,7 +76,7 @@ python python-graphics-test.py
 ```
 ![alt text](Test/Images/koch.png)
 
-To check the code, launch the Visual Code editor and open the python file ``PPE/Installation/Test/koch.py``. 
+To check the code, launch the Visual Code editor and open the python file ``PPE/Installation/Test/python-graphics-test.py``. 
 
 ---
 

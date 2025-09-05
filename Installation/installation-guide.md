@@ -19,7 +19,7 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/download
 
 2. Create your first repository. In the upper-right corner of any page, select `+`, then click on `New repository`. In the `Repository name` box, type `cogsup-prog`. Make sure your repository is **Public** (this should be the case by default). You can accept the defaults for all the other options. Then, click on `Create repository`.
 
-3. Create an access token—you will need this to update the repository with files and folders from your computer. In the upper-right corner, click on the icon representing your profile, then choose ```Settings```. Scroll down until you see ```Developer settings``` on the lefthand menu, and click on it. On the left, click on ```Personal access tokens```, then select ```Tokens (classic)```.  Click on the ```Generate new token``` button, then choose the first option (```Generate new token: Fine-grained, repo-scoped```). Select a token name (e.g., "programming"), select ```No expiration``` under **Expiration** and  ```All repositories``` under **Repository access**. Click on ```Generate token```, then make sure to copy the generated token and paste it somewhere where you can retrieve it later.
+3. Create an access token—you will need this to update the repository with files and folders from your computer. In the upper-right corner, click on the icon representing your profile, then choose ```Settings```. Scroll down until you see ```Developer settings``` on the lefthand menu, and click on it. On the left, click on ```Personal access tokens```, then select ```Tokens (classic)```.  Click on the ```Generate new token``` button, then choose the first option (```Generate new token (classic)```). Select a token name under **Note** (e.g., "programming"), select ```No expiration``` under **Expiration** and check ```repo``` under **Select scope**. Click on ```Generate token```, then make sure to copy the generated token and paste it somewhere where you can retrieve it later.
 
 4. Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for version control, following the platform-specific instructions at the link provided. 
 
@@ -136,4 +136,23 @@ install.packages('IRkernel')
 IRkernel::installspec(user = FALSE)
 ```
 
-This makes R usable in Jupyter notebooks.  
+This makes R usable in Jupyter notebooks.
+
+**Troubleshooting**
+You might get one of two errors when running ```IRkernel::installspec(user = FALSE)```. 
+
+If the error complains about not having admin access (typically, on Macs), open the terminal, type ```sudo R```, enter your computer password, then run ```IRkernel::installspec(user = FALSE)``` again. 
+
+If the error complains that **jupyter-client** is not installed (typically on Windows):
+
+- Press ```⊞ + R```, then type ```sysdm.cpl```.
+- Go to **Advanced** → **Environment variables**.
+- Under **User variables**, select **Path** → **Edit** → **New**, and paste: ```C:\Users\YOUR_USERNAME\AppData\Local\Programs\Python\Python313\Scripts``` (replace YOUR_USERNAME with your username).
+- Restart Git Bash
+- In Git Bash, enter:
+
+```bash
+jupyter --version
+```
+
+If you see a number, the troubleshooting worked. Open R and run ```IRkernel::installspec(user = FALSE)``` again.
