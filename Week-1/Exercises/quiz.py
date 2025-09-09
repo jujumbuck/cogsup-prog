@@ -202,7 +202,7 @@ def run_quiz_from_csv(filename, section = "Warm-up", start_row = 0):
             rows = [row for row in rows if row.get('section', '').strip() == section]
             total = len(rows)
 
-        results_file = f"Exercise-{exercise_number}-Answers.csv"
+        results_file = f"Exercise-1.{exercise_number}-Answers.csv"
 
         # If a results file already exists, resume from the last attempted question
         resume_start_row = start_row
