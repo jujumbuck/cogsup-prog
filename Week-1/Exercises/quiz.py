@@ -1,5 +1,8 @@
-import io, csv, os, ast, builtins, readline
+import io, csv, os, ast, builtins, sys, readline
 from contextlib import redirect_stdout
+
+# Change working directory to script's folder
+os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 instructions = """
 ---
