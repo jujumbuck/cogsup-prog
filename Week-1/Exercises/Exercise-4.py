@@ -100,12 +100,12 @@ Exercise 4.7
 
 Task:
 ------
-Given the dictionary of responsesMapping = {'j':'jazz', 'p':'pop'},
+Given the dictionary of responses_mapping = {'j':'jazz', 'p':'pop'},
 and the string responses = 'jjjpjjpppppjj',
 print the list of corresponding words.
 """
 
-responsesMapping = {'j':'jazz','p':'pop'}
+responses_mapping = {'j':'jazz','p':'pop'}
 responses = 'jjjpjjpppppjj'
 
 print("Exercise 4.7")
@@ -134,14 +134,26 @@ Exercise 4.9
 
 Task:
 ------
-For the dictionary {'apple': 3, 'banana': 2, 'orange': 5},
-print each key followed by its value, one per line, like:
-apple: 3
-banana: 2
-orange: 5
+Starting from the dictionary {'zebra': 10, 'dolphin': 25, 'alligator': 3, 'monkey': 5, 'pig': 9},
+create a new one whose keys are sorted alphabetically.
 """
 
 print("Exercise 4.9")
+
+pass
+
+print("---")
+
+"""
+Exercise 4.10
+
+Task:
+------
+Starting from the dictionary {'zebra': 10, 'dolphin': 25, 'alligator': 3, 'monkey': 5, 'pig': 9},
+create a new one whose values appear in increasing order.
+"""
+
+print("Exercise 4.10")
 
 pass
 
