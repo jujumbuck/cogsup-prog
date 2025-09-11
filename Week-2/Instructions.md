@@ -41,7 +41,7 @@ fixation.present()
 exp.clock.wait(1000)
 
 circle.present()
-key, rt = exp.keyboard.wait()
+exp.keyboard.wait()
 
 control.end()
 ```
