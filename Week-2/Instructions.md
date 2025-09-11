@@ -148,7 +148,7 @@ Since the experiment is over, this quits expyriment:
 ## Exercise 1
 In **Assignments/Exercises**, you will find a python script called `square.py`. Based on the example script above, create a script that displays the fixation cross for **half a second**, then a **blue** square of length 50 until a key is pressed.
 
-Hint: You might want to have a look at [expyriment's `stimuli.Rectangle` documentation](https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle). The color of the square can be set when initializing the object.
+Hint: You might want to have a look at expyriment's [`stimuli.Rectangle`] documentation (https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle). The color of the square can be set when initializing the object (note that expyriment uses British spelling, so use *colour* instead of *color*).
 
 ## Exercise 2
 Open `two_squares.py`. Write a script that displays two squares side by side, the left one red, the right one green. Leave the fixation cross out. The two squares should be separated by 200 pixels but centered as a whole. Present them on-screen until a key is pressed.
@@ -161,7 +161,7 @@ Hints:
 ## Exercise 3: Causal perception from Michottean launching
 Check out the first video at [this link](https://www.jfkominsky.com/demos.html), under **Launching and simple non-causal events**. Duplicate/create a copy of `two_squares.py` in the same **Assignments/Week-2/Exercises** subfolder and rename it to `launching.py`. Modify the code as follows: 
 1. Present the two squares side by side for 1 second but modify their positions such that:
-    - the red square starts on the left side, 400 pixels leftward
+    - the red square starts on the left side, 400 pixels left from the center
     - the green square starts at the center
 2. Using the ```position``` attribute, animate the left square to move to the left until it reaches the green square. Adjust the speed to approximately match the one in the video.
 3. Once the red square reaches the green square, the green square should move to the right, at the same speed and for the same amount of time as the red square.
