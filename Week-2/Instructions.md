@@ -47,7 +47,7 @@ from expyriment import design, control, stimuli
 ```
 
 Imports Expyriment's main modules:
-	- design: for experiment/session objects
-	- control: for initializing, starting, and ending the experiment
-	- stimuli: for creating visual (and other) stimuli like shapes, text, and fixation crosses
+- design: for experiment/session objects
+- control: for initializing, starting, and ending the experiment
+- stimuli: for creating visual (and other) stimuli like shapes, text, and fixation crosses
 
