@@ -9,7 +9,7 @@ cd your-path/Programming/Materials/
 git pull
 ```
 
-Second, copy the Week-2 subfolder. **Again, make sure to change ```your-path``` to the correct path!**
+Second, copy the Week-2 subfolder from **Materials** to **Assignments**. **Again, make sure to change ```your-path``` to the correct path!**
 
 ```bash
 cd your-path/Programming/Assignments/
@@ -39,3 +39,15 @@ key, rt = exp.keyboard.wait()
 
 control.end()
 ```
+
+# Step-by-Step Explanation of the Expyriment Script
+
+```python
+from expyriment import design, control, stimuli
+```
+
+Imports Expyriment's main modules:
+	- design: for experiment/session objects
+	- control: for initializing, starting, and ending the experiment
+	- stimuli: for creating visual (and other) stimuli like shapes, text, and fixation crosses
+
