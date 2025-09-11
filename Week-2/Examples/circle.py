@@ -1,7 +1,7 @@
 from expyriment import design, control, stimuli
 
 # 1. Initiate an experiment called "Circle"
-exp = design.Experiment(name = "Circle")
+exp = design.Experiment(name="Circle")
 control.initialize(exp)
 
 # 2. Create the stimuli
@@ -17,7 +17,7 @@ exp.clock.wait(1000)
 
 # 4b. Present square
 circle.present()
-key, rt = exp.keyboard.wait()
+exp.keyboard.wait()
 
 # 5. End experiment
 control.end()

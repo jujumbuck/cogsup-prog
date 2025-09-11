@@ -40,14 +40,38 @@ key, rt = exp.keyboard.wait()
 control.end()
 ```
 
-# Step-by-Step Explanation of the Expyriment Script
+## Step-by-Step explanation of the script
+
+1. Import modules
 
 ```python
 from expyriment import design, control, stimuli
 ```
 
 Imports Expyriment's main modules:
-- design: for experiment/session objects
-- control: for initializing, starting, and ending the experiment
-- stimuli: for creating visual (and other) stimuli like shapes, text, and fixation crosses
+- **design**: for experiment/session objects
+- **control**: for initializing, starting, and ending the experiment
+- **stimuli**: for creating visual (and other) stimuli, such as shapes, text, and fixation crosses
 
+```python
+exp = design.Experiment(name = "Circle")
+```
+
+Creates an ```Experiment``` object named "Circle". This object:
+- stores the global settings of the experiment
+- handles the data and log files, the screen, and the input devices (for instance, the keyboard)
+
+```python
+control.initialize(exp)
+```
+
+Initializes the experiment:
+- Creates folders and log files
+- Prepares the display window
+- Activates input devices
+
+This must be done before any stimulus is presented.
+
+```python
+fixation = stimuli.FixCross()
+```
