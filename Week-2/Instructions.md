@@ -41,8 +41,7 @@ control.end()
 ```
 
 ## Step-by-Step explanation of the script
-
-1. Import modules
+### 1. Import modules
 
 ```python
 from expyriment import design, control, stimuli
