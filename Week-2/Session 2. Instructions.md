@@ -163,20 +163,8 @@ Hints:
 - The position of the shape corresponds to the coordinates at the shape's center
 - Expyriment takes (0, 0) to be the center of the screen and measures space in pixel units
 
-## Exercise 3A: Labeled shapes
-Duplicate `two_squares.py` (create a copy of it) and rename it to `labeled_shapes.py`. Then:
-1. Replace the red square on the left with a purple equilateral triangle (side length: 50).
-2. Replace the green square on the right with a yellow regular hexagon. The two shapes should match in height.
-3. Add 50px-long and 2px-wide white vertical lines going upwards from the top of each shape. 
-4. Add shape labels on top of the line segments ("triangle" and, respectively, "hexagon"), 20px away from the upper end of the segments. The color of the font should be white.
-5. Present this display until a key is pressed.
-
-## Exercise 3B: Labeled shapes abstracted
-Duplicate `labeled_shapes.py` and rename it to `labeled_shapes_function.py`. If you coded the triangle and hexagon by hand, create a function that generates a labeled regular polygon of a given side-length and color and at a certain position. Recreate the display in Exercise 3A using this function.
-
-![alt text](<Images/E3.png>)
-
-## Exercise 4: Causal perception from Michottean launching
+## Exercise 3: Causal perception
+### 3A: Michottean launching
 Check out the first video at [this link](https://www.jfkominsky.com/demos.html), under **Launching and simple non-causal events**. Duplicate`two_squares.py` in the same **Assignments/Week-2/Exercises** subfolder and rename it to `launching.py`. Modify the code as follows: 
 1. Present the two squares side by side for 1 second but modify their positions such that:
     - the red square starts on the left side, 400 pixels left from the center
@@ -192,16 +180,36 @@ Things to consider:
 - How do I move a square to the left at a given speed?
 - How do I encode the moment when the red square reaches the green square?
 
-## Exercise 4A: Disrupting the causal perception via a temporal gap
+### Exercise 3B: Disrupting the causal perception via a temporal gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(1000)```) and notice how the sense of causality disappears. Gradually shorten this delay until you find the smallest gap at which the event still feels **non-causal**. Leave that value in the code before pushing to GitHub.
 
-## Exercise 4B: Disrupt the causal perception via a spatial gap
+### Exercise 3C: Disrupt the causal perception via a spatial gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Modify the script by introducing a spatial gap between the two squares. Play around with multiple values. Gradually reduce this gap until you find the smallest distance at which the event still feels **non-causal**. Leave that value in the code before uploading to GitHub.
 
-## Exercise 4C: From launching to triggering
+#### Exercise 3D: From launching to triggering
 Create a copy of ```launching.py``` and rename it to ```triggering.py```. Make the green square on the right move at a speed three times faster than the square on the left. Does it still look like the red square caused the green square to move?
 
-## Exercise 4D: Optional challenge for the seasoned programmer
+### Exercise 3E: Optional challenge for the seasoned programmer
 Display three consecutive launching events and have the axis of motion be randomly selected each time from a full circle of 360 degrees (Hint: this will require trigonometry).
 
 Credits to [Jonathan Kominsky](https://www.jfkominsky.com) for this problem
+
+## Exercise 4: Labeled shapes
+### 4A: Triangle and hexagon
+Duplicate `two_squares.py` (create a copy of it) and rename it to `labeled_shapes.py`.
+1. Replace the red square on the left with a purple equilateral triangle (side length: 50).
+2. Replace the green square on the right with a yellow regular hexagon. The two shapes should match in height.
+3. Add 50px-long and 2px-wide white vertical lines going upwards from the top of each shape. 
+4. Add shape labels on top of the line segments ("triangle" and, respectively, "hexagon"), 20px away from the upper end of the segments. The color of the font should be white.
+5. Present this display until a key is pressed.
+
+![Purple triangle and yellow hexagon](Images/E4.png)
+
+Hints:
+- To find out how to present polygons, lines, and text of various kinds, check out expyriment's documentation:
+    - ```Shape``` [documentation](https://docs.expyriment.org/expyriment.stimuli.Shape.html), in particular the **Notes** under ```__init__```
+    - ```Line``` [documentation](https://docs.expyriment.org/expyriment.stimuli.Line.html)
+    - ```TextLine``` [documentation](https://docs.expyriment.org/expyriment.stimuli.TextLine.html)
+
+### 4B: Turn to function
+If you've already coded Exercise 4A by using a polygon-generating function, no need to do anything. Else, duplicate `labeled_shapes.py` and rename it to `labeled_shapes_function.py`. Refactor the code to include a function that generates a labeled regular polygon with **n** sides of a given **length** and **color**, and at a certain **position**. Recreate the display in Exercise 4A using this function.
