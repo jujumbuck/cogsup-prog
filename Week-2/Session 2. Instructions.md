@@ -109,10 +109,12 @@ Starts running the currently active experiment:
 
 ### 7. Present the fixation cross
 ```python
-fixation.present()
+fixation.present(clear=True, update=True)
 ```
 
 Displays the fixation cross on screen.
+- ```clear = True``` → Clear everything on the screen before plotting the fixation cross
+- ```update = True``` → Update the screen with the fixation cross
 
 ### 8. Wait for 1 second
 ```python
@@ -123,10 +125,10 @@ Waits 1000 ms (1 second), during which the fixation cross remains visible.
 
 ### 9. Present the circle
 ```python
-circle.present()
+circle.present(clear = True, update = True)
 ```
 
-Clears the screen and displays the circle stimulus.
+Clears the screen (removes the fixation cross) and displays the circle stimulus.
 
 ### 10. Wait for a key press
 ```python
@@ -145,18 +147,19 @@ Since the experiment is over, this quits expyriment:
 - Shows the "Ending experiment..." screen
 - Closes the display window
 
-## Exercise 1
-In **Assignments/Exercises**, you will find a python script called `square.py`. Based on the example script above, create a script that displays the fixation cross for **half a second**, then a **blue** square of length 50 until a key is pressed.
+## Exercise 1: Superimposed objects
+In **Assignments/Exercises**, you will find a python script called `square.py`. Based on the example script above, create a script that displays a fixation cross **inside** a blue square of length 50 for **half a second**, then removes the fixation cross and displays only the **blue** square of length 50 until a key is pressed.
 
-Hint: You might want to have a look at expyriment's [`stimuli.Rectangle`] documentation (https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle). The color of the square can be set when initializing the object (note that expyriment uses British spelling, so use *colour* instead of *color*).
+Hints: 
+- You might want to have a look at expyriment's `stimuli.Rectangle` [documentation](https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle). The color of the square can be set when initializing the object (note that expyriment uses British spelling, so use *colour* instead of *color*).
+- Mind the arguments you pass to ```present```.
 
-## Exercise 2
+## Exercise 2: Side-by-side objects
 Open `two_squares.py`. Write a script that displays two squares side by side, the left one red, the right one green. Leave the fixation cross out. The two squares should be separated by 200 pixels but centered as a whole. Present them on-screen until a key is pressed.
 
 Hints: 
 - By default, stimuli are presented at the center of the screen. To modify this, you will need to set the ```position``` attribute of squares either when initializing them, or later (e.g., ```square_1.position = (x, y)``` or ```square_1.reposition(x, y)```)
 - Expyriment takes (0, 0) to be the center of the screen and measures space in pixel units
-- Mind the arguments you pass to ```present```
 
 ## Exercise 3: Causal perception from Michottean launching
 Check out the first video at [this link](https://www.jfkominsky.com/demos.html), under **Launching and simple non-causal events**. Duplicate/create a copy of `two_squares.py` in the same **Assignments/Week-2/Exercises** subfolder and rename it to `launching.py`. Modify the code as follows: 
@@ -174,16 +177,16 @@ Things to consider:
 - How do I move a square to the left at a given speed?
 - How do I encode the moment when the red square reaches the green square?
 
-## Exercise 3A: Disrupting the causal perception temporally
+## Exercise 3A: Disrupting the causal perception via a temporal gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(1000)```) and notice how the sense of causality disappears. Gradually shorten this delay until you find the smallest gap at which the event still feels **non-causal**. Leave that value in the code before uploading.
 
-## Exercise 3B: Disrupt the causal perception spatially
+## Exercise 3B: Disrupt the causal perception via a spatial gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Change the code to introduce a spatial gap between the two squares. Play around with multiple values. Gradually reduce this gap until you find the smallest distance at which the event still feels **non-causal**. Leave that value in the code before uploading.
 
 ## Exercise 3C: From launching to triggering
 Create a copy of ```launching.py``` and rename it to ```triggering.py```. Make the green square on the right move at a speed three times faster than the square on the left. Does it still look like the red square caused the green square to move?
 
-## Exercise 3D: Optional challenge for the more seasoned programmers among you
+## Exercise 3D: Optional challenge for the seasoned programmer
 Display three consecutive launching events and have the axis of motion be randomly selected each time from a full circle of 360 degrees (Hint: this will require trigonometry).
 
 Credits to [Jonathan Kominsky](https://www.jfkominsky.com) for this problem
