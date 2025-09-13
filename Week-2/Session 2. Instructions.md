@@ -174,7 +174,7 @@ Duplicate `two_squares.py` (create a copy of it) and rename it to `labeled_shape
 ## Exercise 3B: Labeled shapes abstracted
 Duplicate `labeled_shapes.py` and rename it to `labeled_shapes_function.py`. If you coded the triangle and hexagon by hand, create a function that generates a labeled regular polygon of a given side-length and color and at a certain position. Recreate the display in Exercise 3A using this function.
 
-![alt text](<Images/E3.png>)
+![alt text](<img src="Images/E3.png" alt="alt text" width="50%" />)
 
 ## Exercise 4: Causal perception from Michottean launching
 Check out the first video at [this link](https://www.jfkominsky.com/demos.html), under **Launching and simple non-causal events**. Duplicate`two_squares.py` in the same **Assignments/Week-2/Exercises** subfolder and rename it to `launching.py`. Modify the code as follows: 
