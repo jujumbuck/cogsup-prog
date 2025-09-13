@@ -199,7 +199,7 @@ Credits to [Jonathan Kominsky](https://www.jfkominsky.com) for this problem
 Duplicate `two_squares.py` (create a copy of it) and rename it to `labeled_shapes.py`.
 1. Replace the red square on the left with a purple equilateral triangle (side length: 50).
 2. Replace the green square on the right with a yellow regular hexagon. The two shapes should match in height.
-3. Add 50px-long and 2px-wide white vertical lines going upwards from the top of each shape. 
+3. Add 50px-long and 3px-wide white vertical lines going upwards from the top of each shape. 
 4. Add shape labels on top of the line segments ("triangle" and, respectively, "hexagon"), 20px away from the upper end of the segments. The color of the font should be white.
 5. Present this display until a key is pressed.
 
