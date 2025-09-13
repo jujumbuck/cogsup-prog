@@ -147,14 +147,15 @@ Since the experiment is over, this quits expyriment:
 - Shows the "Ending experiment..." screen
 - Closes the display window
 
-## Exercise 1: Superimposed objects
+## Exercises
+### Exercise 1: Superimposed objects
 In **Assignments/Exercises**, you will find a python script called `square.py`. Based on the example script above, create a script that displays a fixation cross **inside** a blue square of length 50 for **half a second**, then removes the fixation cross and displays only the **blue** square of length 50 until a key is pressed.
 
 Hints: 
 - You might want to have a look at expyriment's `stimuli.Rectangle` [documentation](https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle): the color of the square can be set when initializing the object (note that expyriment uses UK spelling, so use *colour* instead of *color*)
 - Mind the arguments you pass to ```present```
 
-## Exercise 2: Side-by-side objects
+### Exercise 2: Side-by-side objects
 Open `two_squares.py`. Write a script that displays two squares side by side, the left one red, the right one green. Leave the fixation cross out. The two squares should be separated by 200 pixels but centered as a whole. Present them on-screen until a key is pressed.
 
 Hints: 
@@ -163,8 +164,8 @@ Hints:
 - The position of the shape corresponds to the coordinates at the shape's center
 - Expyriment takes (0, 0) to be the center of the screen and measures space in pixel units
 
-## Exercise 3: Causal perception
-### 3A: Michottean launching
+### Exercise 3: Causal perception
+#### 3A: Michottean launching
 Check out the first video at [this link](https://www.jfkominsky.com/demos.html), under **Launching and simple non-causal events**. Duplicate`two_squares.py` in the same **Assignments/Week-2/Exercises** subfolder and rename it to `launching.py`. Modify the code as follows: 
 1. Present the two squares side by side for 1 second but modify their positions such that:
     - the red square starts on the left side, 400 pixels left from the center
@@ -180,22 +181,22 @@ Things to consider:
 - How do I move a square to the left at a given speed?
 - How do I encode the moment when the red square reaches the green square?
 
-### Exercise 3B: Disrupting the causal perception via a temporal gap
+#### Exercise 3B: Disrupting the causal perception via a temporal gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(1000)```) and notice how the sense of causality disappears. Gradually shorten this delay until you find the smallest gap at which the event still feels **non-causal**. Leave that value in the code before pushing to GitHub.
 
-### Exercise 3C: Disrupt the causal perception via a spatial gap
+#### Exercise 3C: Disrupt the causal perception via a spatial gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Modify the script by introducing a spatial gap between the two squares. Play around with multiple values. Gradually reduce this gap until you find the smallest distance at which the event still feels **non-causal**. Leave that value in the code before uploading to GitHub.
 
 #### Exercise 3D: From launching to triggering
 Create a copy of ```launching.py``` and rename it to ```triggering.py```. Make the green square on the right move at a speed three times faster than the square on the left. Does it still look like the red square caused the green square to move?
 
-### Exercise 3E: Optional challenge for the seasoned programmer
+#### Exercise 3E: Optional challenge for the seasoned programmer
 Display three consecutive launching events and have the axis of motion be randomly selected each time from a full circle of 360 degrees (Hint: this will require trigonometry).
 
 Credits to [Jonathan Kominsky](https://www.jfkominsky.com) for this problem
 
-## Exercise 4: Labeled shapes
-### 4A: Triangle and hexagon
+### Exercise 4: Labeled shapes
+#### 4A: Triangle and hexagon
 Duplicate `two_squares.py` (create a copy of it) and rename it to `labeled_shapes.py`.
 1. Replace the red square on the left with a purple equilateral triangle (side length: 50).
 2. Replace the green square on the right with a yellow regular hexagon. The two shapes should match in height.
@@ -211,5 +212,5 @@ Hints:
     - ```Line``` [documentation](https://docs.expyriment.org/expyriment.stimuli.Line.html)
     - ```TextLine``` [documentation](https://docs.expyriment.org/expyriment.stimuli.TextLine.html)
 
-### 4B: Turn to function
+#### 4B: Turn to function
 If you've already coded Exercise 4A by using a polygon-generating function, no need to do anything. Else, duplicate `labeled_shapes.py` and rename it to `labeled_shapes_function.py`. Refactor the code to include a function that generates a labeled regular polygon with **n** sides of a given **length** and **color**, and at a certain **position**. Recreate the display in Exercise 4A using this function.
