@@ -170,7 +170,7 @@ Check out the first video at [this link](https://www.jfkominsky.com/demos.html),
 1. Present the two squares side by side for 1 second but modify their positions such that:
     - the red square starts on the left side, 400 pixels left from the center
     - the green square starts at the center
-2. Using the ```position``` attribute, animate the left square to move to the left until it reaches the green square. Adjust the speed to approximately match the one in the video.
+2. Using the ```position``` [attribute](https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle) or the ```move``` [function](https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle.move), animate the left square to move to the left until it reaches the green square. Adjust the speed to approximately match the one in the video.
 3. Once the red square reaches the green square, the green square should move to the right, at the same speed and for the same amount of time as the red square.
 4. Show this display for 1 second.
 5. Add explanatory comments at each step in the script.
@@ -204,7 +204,7 @@ Duplicate `two_squares.py` (create a copy of it) and rename it to `labeled_shape
 4. Add shape labels on top of the line segments ("triangle" and, respectively, "hexagon"), 20px away from the upper end of the segments. The color of the font should be white.
 5. Present this display until a key is pressed.
 
-![Purple triangle and yellow hexagon](Images/E4-320.png)
+![Purple triangle and yellow hexagon](Images/E4.png)
 
 Hints:
 - To find out how to present polygons, lines, and text of various kinds, check out expyriment's documentation:
