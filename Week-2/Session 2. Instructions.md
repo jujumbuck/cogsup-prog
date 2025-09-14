@@ -204,7 +204,7 @@ Duplicate `two_squares.py` (create a copy of it) and rename it to `labeled_shape
 4. Add shape labels on top of the line segments ("triangle" and, respectively, "hexagon"), 20px away from the upper end of the segments. The color of the font should be white.
 5. Present this display until a key is pressed.
 
-![Purple triangle and yellow hexagon](Images/E4-320.png)
+![Purple triangle and yellow hexagon](Images/E4.png)
 
 Hints:
 - To find out how to present polygons, lines, and text of various kinds, check out expyriment's documentation:
