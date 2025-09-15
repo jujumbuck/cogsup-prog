@@ -139,7 +139,7 @@ Waits for a key press. During this time, the display stays unchanged.
 control.end()
 ```
 
-Since the experiment is over, this quits expyriment:
+This quits expyriment:
 - Saves data and event files
 - Shows the "Ending experiment..." screen
 - Closes the display window
