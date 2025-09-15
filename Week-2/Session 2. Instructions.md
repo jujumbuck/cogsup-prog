@@ -115,7 +115,7 @@ Check out the first video at [this link](https://www.jfkominsky.com/demos.html),
 
 Things to consider:
 - How do I move a square to the left at a given speed?
-- How do I encode the moment when the red square reaches the green square?
+- How do I encode the collision moment between the two squares?
 
 ### 3B: Disrupting the causal perception via a temporal gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(2000)```) and notice how the sense of causality disappears. Gradually shorten this delay until you find the smallest gap at which the event still feels **non-causal**. Leave that value in the code before pushing to GitHub.
