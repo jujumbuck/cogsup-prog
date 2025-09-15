@@ -3,18 +3,6 @@
 ## Table of Contents
 - [Preliminaries](#preliminaries)
 - [First expyriment script](#first-expyriment-script)
-- [Step-by-step explanation of the script](#step-by-step-explanation-of-the-script)
-    - [1. Import modules](#1-import-modules)
-    - [2. Create the experiment](#2-create-the-experiment)
-    - [3. Initialize the experiment](#3-initialize-the-experiment)
-    - [4. Create a fixation cross](#4-create-a-fixation-cross)
-    - [5. Create a circle](#5-create-a-circle)
-    - [6. Start the experiment](#6-start-the-experiment)
-    - [7. Present the fixation cross](#7-present-the-fixation-cross)
-    - [8. Wait for 1 second](#8-wait-for-1-second)
-    - [9. Present the circle](#9-present-the-circle)
-    - [10. Wait for a key press](#10-wait-for-a-key-press)
-    - [11. End the experiment](#11-end-the-experiment)
 - [Session 2: Exercises](#sesssion-2-exercises)
     - [Exercise 1: Superimposed objects](#exercise-1-superimposed-objects)
     - [Exercise 2: Side-by-side objects](#exercise-2-side-by-side-objects)
@@ -29,7 +17,6 @@
         - [4B: Polygon function](#4b-polygon-function)
 
 ## Preliminaries
-
 First, update the Materials folder on your computer with the latest version of our repository. **Make sure to change ```your-path``` to the correct path!**
 
 ```bash
@@ -52,125 +39,39 @@ python circle.py
 ```
 
 ```python
+# Import the main modules of expyriment
 from expyriment import design, control, stimuli
 
+# Create an object of class Experiment: This stores the global settings of your experiment & handles the data file, screen, and input devices
 exp = design.Experiment(name = "Circle")
+
+# Initialize the experiment: Must be done before presenting any stimulus
 control.initialize(exp)
 
+# Create a fixation cross of default color, size, and at the default position (not yet rendered)
 fixation = stimuli.FixCross()
+
+# Create a 50px-radius circle (not yet rendered)
 circle = stimuli.Circle(radius=50)
 
+# Start running the experiment
 control.start(subject_id=1)
 
+# Present the fixation cross
 fixation.present(clear=True, update=True)
+
+# Leave it on-screen for 1,000 ms
 exp.clock.wait(1000)
 
+# Remove the cross and replace it with a circle
 circle.present(clear=True, update=True)
+
+# Leave it on-screen until a key is pressed
 exp.keyboard.wait()
 
+# End the current session and quit expyriment
 control.end()
 ```
-
-## Step-by-step explanation of the script
-Open **Assignments/Week-2/Exercises/circle.py** in VS Code and comment each line as we go together through the script.
-
-### 1. Import modules
-
-```python
-from expyriment import design, control, stimuli
-```
-
-Imports Expyriment's main modules:
-- **design**: for experiment/session objects
-- **control**: for initializing, starting, and ending the experiment
-- **stimuli**: for creating visual (and other) stimuli, such as shapes, text, and fixation crosses
-
-### 2. Create the experiment
-
-```python
-exp = design.Experiment(name = "Circle")
-```
-
-Creates an ```Experiment``` object named "Circle" by calling the **Experiment** class in the **design** module. This object:
-- stores the global settings of the experiment
-- handles the data and log files, the screen, and the input devices (for instance, the keyboard)
-
-### 3. Initialize the experiment
-```python
-control.initialize(exp)
-```
-
-Initializes the experiment stored in ```exp```:
-- Opens the display window
-- Presents the startup screen with the countdown—this is there to ensure that the Python interpreter has enough time to start up properly and improves timing accuracy afterwards
-- Enables input handling (e.g., keys pressed) and event logging
-- Starts an experimental clock for timing purposes
-
-This must be done before any stimulus is presented.
-
-### 4. Create a fixation cross
-```python
-fixation = stimuli.FixCross()
-```
-
-Creates a fixation-cross stimulus of default color and size. At this stage, ```fixation``` is just a Python object and has not been rendered.
-
-### 5. Create a circle
-```python
-circle = stimuli.Circle(radius=50)
-```
-
-Creates a circle with a radius of 50 pixels.
-
-### 6. Start the experiment
-```python
-control.start(subject_id=1)
-```
-
-Starts running the currently active experiment:
-- Sets the subject ID to 1
-- Creates a data file (more on this later)
-- Presents the "Ready" screen
-
-### 7. Present the fixation cross
-```python
-fixation.present(clear=True, update=True)
-```
-
-Displays the fixation cross on screen.
-- ```clear = True``` → Clear everything on the screen before plotting the fixation cross
-- ```update = True``` → Update the screen with the fixation cross
-
-### 8. Wait for 1 second
-```python
-exp.clock.wait(1000)
-```
-
-Waits 1000 ms (1 second), during which the fixation cross remains visible.
-
-### 9. Present the circle
-```python
-circle.present(clear=True, update=True)
-```
-
-Displays the circle stimulus on-screen.
-
-### 10. Wait for a key press
-```python
-exp.keyboard.wait()
-```
-
-Waits for a key press. During this time, the display stays unchanged.
-
-### 11. End the experiment
-```python
-control.end()
-```
-
-This quits expyriment:
-- Saves data and event files
-- Shows the "Ending experiment..." screen
-- Closes the display window
 
 # Sesssion 2: Exercises
 When solving the exercises, you might want to add this line at the beginning of your scripts: ```control.set_develop_mode()```. This saves time by setting these global variables to the following values:
@@ -184,7 +85,7 @@ expyriment.control.defaults.fast_quit = True # No goodbye message
 Once you're happy with the solution, comment this line out before pushing to GitHub.
 
 ## Exercise 1: Superimposed objects
-In **Assignments/Exercises**, you will find a python script called `square.py`. Based on the example script above, create a script that displays a fixation cross **inside** a blue square of length 50 for **half a second**, then removes the fixation cross and displays only the **blue** square of length 50 until a key is pressed.
+In **Assignments/Exercises**, you will find a python script called `square.py`. Based on the example script above (`circle.py`), create a script that displays a fixation cross **inside** a blue square of length 50 for **half a second**, then removes the fixation cross and displays only the **blue** square of length 50 until a key is pressed.
 
 Hints: 
 - You might want to have a look at expyriment's `stimuli.Rectangle` [documentation](https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle): the color of the square can be set when initializing the object (note that expyriment uses UK spelling, so use *colour* instead of *color*)
