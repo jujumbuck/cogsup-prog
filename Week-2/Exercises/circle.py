@@ -7,10 +7,10 @@ exp = design.Experiment(name = "Circle")
 # Initialize the experiment: Must be done before presenting any stimulus
 control.initialize(exp)
 
-# Create a fixation cross of default color, size, and at the default position (not yet rendered)
-fixation = stimuli.FixCross()
+# Create a fixation cross (color, size, and position will take on default values)
+fixation = stimuli.FixCross() # At this stage the fixation cross is not yet rendered
 
-# Create a 50px-radius circle (not yet rendered)
+# Create a 50px-radius circle
 circle = stimuli.Circle(radius=50)
 
 # Start running the experiment
