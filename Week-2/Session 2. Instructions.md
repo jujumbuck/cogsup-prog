@@ -125,14 +125,14 @@ Waits 1000 ms (1 second), during which the fixation cross remains visible.
 circle.present(clear = True, update = True)
 ```
 
-Clears the screen (removes the fixation cross) and displays the circle stimulus.
+Displays the circle stimulus on-screen.
 
 ### 10. Wait for a key press
 ```python
 exp.keyboard.wait()
 ```
 
-Waits until the participant presses a key.
+Waits for a key press. During this time, the display stays unchanged.
 
 ### 11. End the experiment
 ```python
@@ -144,17 +144,16 @@ Since the experiment is over, this quits expyriment:
 - Shows the "Ending experiment..." screen
 - Closes the display window
 
-
 # Sesssion 2: Exercises
 When solving the exercises, you might want to add this line at the beginning of your scripts: ```control.set_develop_mode()```. This saves time by setting these global variables to the following values:
 
 ```python
 expyriment.control.defaults.initialise_delay = 0 # No countdown
 expyriment.control.defaults.window_mode = True # Not full-screen
-expyriment.control.defaults.fast_quit = True # Self-explanatory
+expyriment.control.defaults.fast_quit = True # No goodbye message
 ```
 
-Once you're happy with the solution, comment it out before pushing to GitHub.
+Once you're happy with the solution, comment this line out before pushing to GitHub.
 
 ## Exercise 1: Superimposed objects
 In **Assignments/Exercises**, you will find a python script called `square.py`. Based on the example script above, create a script that displays a fixation cross **inside** a blue square of length 50 for **half a second**, then removes the fixation cross and displays only the **blue** square of length 50 until a key is pressed.
