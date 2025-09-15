@@ -30,10 +30,8 @@ exp = design.Experiment(name = "Circle")
 control.initialize(exp)
 
 fixation = stimuli.FixCross()
-fixation.preload()
 
 circle = stimuli.Circle(radius=50)
-circle.preload()
 
 control.start()
 
@@ -148,6 +146,17 @@ Since the experiment is over, this quits expyriment:
 - Closes the display window
 
 
+# Sesssion 2: Exercises
+When solving the exercises, you might want to add this line at the beginning of your scripts: ```control.set_develop_mode()```. This saves time by setting these global variables to the following values:
+
+```python
+expyriment.control.defaults.initialise_delay = 0 # No countdown
+expyriment.control.defaults.window_mode = True # Not full-screen
+expyriment.control.defaults.fast_quit = True # Self-explanatory
+```
+
+Once you're happy with the solution, comment it out before pushing to GitHub.
+
 ## Exercise 1: Superimposed objects
 In **Assignments/Exercises**, you will find a python script called `square.py`. Based on the example script above, create a script that displays a fixation cross **inside** a blue square of length 50 for **half a second**, then removes the fixation cross and displays only the **blue** square of length 50 until a key is pressed.
 
@@ -190,10 +199,14 @@ Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.
 ### Exercise 3D: From launching to triggering
 Create a copy of ```launching.py``` and rename it to ```triggering.py```. Make the green square on the right move at a speed three times faster than the square on the left. Does it still look like the red square caused the green square to move?
 
-### Exercise 3E: Optional challenge for the seasoned programmer
-Display three consecutive launching events and have the axis of motion be randomly selected each time from a full circle of 360 degrees (Hint: this will require trigonometry).
+### Exercise 3E: Optional challenge
+Display three consecutive launching events, but instead of horizontal motion, have the axis of motion be randomly selected each time from a full circle. To simplify things, keep the central green square where it is, and choose a random position for the red one on a circle with radius size equal to 300px. The green square should move toward the red square and launch it **upon contact**. The launched object should travel at the same speed and for the same amount of time as the green square. Save it in a script called ```launching_random_motion.py```.
 
-Credits to [Jonathan Kominsky](https://www.jfkominsky.com) for this problem
+Hints: 
+- This will require trigonometry
+- Take care when coding the moment of collision—There should be no gap or overlap between the two squares (check [this method](https://docs.expyriment.org/expyriment.stimuli.Rectangle.html#expyriment.stimuli.Rectangle.overlapping_with_stimulus) out; if using it, be mindful that it returns 2 values, not one)
+
+*Credits to [Jonathan Kominsky](https://www.jfkominsky.com) for this problem*
 
 ## Exercise 4: Labeled shapes
 ### 4A: Triangle and hexagon
@@ -212,5 +225,5 @@ Hints:
     - ```Line``` [documentation](https://docs.expyriment.org/expyriment.stimuli.Line.html)
     - ```TextLine``` [documentation](https://docs.expyriment.org/expyriment.stimuli.TextLine.html)
 
-### 4B: Turn to function
-If you've already coded Exercise 4A by using a polygon-generating function, no need to do anything. Else, duplicate `labeled_shapes.py` and rename it to `labeled_shapes_function.py`. Refactor the code to include a function that generates a labeled regular polygon with **n** sides of a given **length** and **color**, and at a certain **position**. Recreate the display in Exercise 4A using this function.
+### 4B: Polygon function
+If you've already coded Exercise 4A by using a polygon-generating function, no need to do anything. Otherwise, duplicate `labeled_shapes.py` and rename it to `labeled_shapes_function.py`. Refactor the code to include a function that generates a labeled regular polygon with **n** sides of a given **length** and **color**, and at a certain **position**. Recreate the display in Exercise 4A using this function.
