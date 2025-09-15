@@ -8,10 +8,10 @@
     - [Exercise 2: Side-by-side objects](#exercise-2-side-by-side-objects)
     - [Exercise 3: Causal perception](#exercise-3-causal-perception)
         - [3A: Michottean launching](#3a-michottean-launching)
-        - [3B: Disrupting the causal perception via a temporal gap](#exercise-3b-disrupting-the-causal-perception-via-a-temporal-gap)
-        - [3C: Disrupt the causal perception via a spatial gap](#exercise-3c-disrupt-the-causal-perception-via-a-spatial-gap)
-        - [3D: From launching to triggering](#exercise-3d-from-launching-to-triggering)
-        - [3E: Optional challenge](#exercise-3e-optional-challenge)
+        - [3B: Disrupting the causal perception via a temporal gap](#3b-disrupting-the-causal-perception-via-a-temporal-gap)
+        - [3C: Disrupt the causal perception via a spatial gap](#3c-disrupting-the-causal-perception-via-a-spatial-gap)
+        - [3D: From launching to triggering](#3d-from-launching-to-triggering)
+        - [3E: Optional challenge](#3e-optional-challenge)
     - [Exercise 4: Labeled shapes](#exercise-4-labeled-shapes)
         - [4A: Triangle and hexagon](#4a-triangle-and-hexagon)
         - [4B: Polygon function](#4b-polygon-function)
@@ -120,7 +120,7 @@ Things to consider:
 ### 3B: Disrupting the causal perception via a temporal gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(2000)```) and notice how the sense of causality disappears. Gradually shorten this delay until you find the smallest gap at which the event still feels **non-causal**. Leave that value in the code before pushing to GitHub.
 
-### 3C: Disrupt the causal perception via a spatial gap
+### 3C: Disrupting the causal perception via a spatial gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Modify the script by introducing a spatial gap between the two squares. Play around with multiple values. Gradually reduce this gap until you find the smallest distance at which the event still feels **non-causal**. Leave that value in the code before uploading to GitHub.
 
 ### 3D: From launching to triggering
