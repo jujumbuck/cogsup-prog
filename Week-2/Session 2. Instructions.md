@@ -9,7 +9,7 @@
     - [Exercise 3: Causal perception](#exercise-3-causal-perception)
         - [3A: Michottean launching](#3a-michottean-launching)
         - [3B: Disrupting the causal perception via a temporal gap](#3b-disrupting-the-causal-perception-via-a-temporal-gap)
-        - [3C: Disrupt the causal perception via a spatial gap](#3c-disrupting-the-causal-perception-via-a-spatial-gap)
+        - [3C: Disrupting the causal perception via a spatial gap](#3c-disrupting-the-causal-perception-via-a-spatial-gap)
         - [3D: From launching to triggering](#3d-from-launching-to-triggering)
         - [3E: Optional challenge](#3e-optional-challenge)
     - [Exercise 4: Labeled shapes](#exercise-4-labeled-shapes)
