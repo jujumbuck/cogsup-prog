@@ -32,12 +32,12 @@ control.initialize(exp)
 fixation = stimuli.FixCross()
 circle = stimuli.Circle(radius=50)
 
-control.start()
+control.start(subject_id=1)
 
-fixation.present()
+fixation.present(clear=True, update=True)
 exp.clock.wait(1000)
 
-circle.present()
+circle.present(clear=True, update=True)
 exp.keyboard.wait()
 
 control.end()
@@ -122,7 +122,7 @@ Waits 1000 ms (1 second), during which the fixation cross remains visible.
 
 ### 9. Present the circle
 ```python
-circle.present(clear = True, update = True)
+circle.present(clear=True, update=True)
 ```
 
 Displays the circle stimulus on-screen.
