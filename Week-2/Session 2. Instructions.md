@@ -30,7 +30,6 @@ exp = design.Experiment(name = "Circle")
 control.initialize(exp)
 
 fixation = stimuli.FixCross()
-
 circle = stimuli.Circle(radius=50)
 
 control.start()
