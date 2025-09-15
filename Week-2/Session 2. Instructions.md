@@ -1,5 +1,34 @@
 # Session 2: Introduction to Expyriment
 
+## Table of Contents
+- [Session 2: Introduction to Expyriment](#session-2-introduction-to-expyriment)
+  - [Preliminaries](#preliminaries)
+  - [First expyriment script](#first-expyriment-script)
+  - [Step-by-step explanation of the script](#step-by-step-explanation-of-the-script)
+    - [1. Import modules](#1-import-modules)
+    - [2. Create the experiment](#2-create-the-experiment)
+    - [3. Initialize the experiment](#3-initialize-the-experiment)
+    - [4. Create a fixation cross](#4-create-a-fixation-cross)
+    - [5. Create a circle](#5-create-a-circle)
+    - [6. Start the experiment](#6-start-the-experiment)
+    - [7. Present the fixation cross](#7-present-the-fixation-cross)
+    - [8. Wait for 1 second](#8-wait-for-1-second)
+    - [9. Present the circle](#9-present-the-circle)
+    - [10. Wait for a key press](#10-wait-for-a-key-press)
+    - [11. End the experiment](#11-end-the-experiment)
+- [Session 2: Exercises](#sesssion-2-exercises)
+  - [Exercise 1: Superimposed objects](#exercise-1-superimposed-objects)
+  - [Exercise 2: Side-by-side objects](#exercise-2-side-by-side-objects)
+  - [Exercise 3: Causal perception](#exercise-3-causal-perception)
+    - [3A: Michottean launching](#3a-michottean-launching)
+    - [Exercise 3B: Disrupting the causal perception via a temporal gap](#exercise-3b-disrupting-the-causal-perception-via-a-temporal-gap)
+    - [Exercise 3C: Disrupt the causal perception via a spatial gap](#exercise-3c-disrupt-the-causal-perception-via-a-spatial-gap)
+    - [Exercise 3D: From launching to triggering](#exercise-3d-from-launching-to-triggering)
+    - [Exercise 3E: Optional challenge](#exercise-3e-optional-challenge)
+  - [Exercise 4: Labeled shapes](#exercise-4-labeled-shapes)
+    - [4A: Triangle and hexagon](#4a-triangle-and-hexagon)
+    - [4B: Polygon function](#4b-polygon-function)
+
 ## Preliminaries
 
 First, update the Materials folder on your computer with the latest version of our repository. **Make sure to change ```your-path``` to the correct path!**
@@ -189,7 +218,7 @@ Things to consider:
 - How do I encode the moment when the red square reaches the green square?
 
 ### Exercise 3B: Disrupting the causal perception via a temporal gap
-Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(1000)```) and notice how the sense of causality disappears. Gradually shorten this delay until you find the smallest gap at which the event still feels **non-causal**. Leave that value in the code before pushing to GitHub.
+Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(2000)```) and notice how the sense of causality disappears. Gradually shorten this delay until you find the smallest gap at which the event still feels **non-causal**. Leave that value in the code before pushing to GitHub.
 
 ### Exercise 3C: Disrupt the causal perception via a spatial gap
 Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Modify the script by introducing a spatial gap between the two squares. Play around with multiple values. Gradually reduce this gap until you find the smallest distance at which the event still feels **non-causal**. Leave that value in the code before uploading to GitHub.
