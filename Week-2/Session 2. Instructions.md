@@ -12,7 +12,7 @@
         - [3C: Disrupting the causal perception via a spatial gap](#3c-disrupting-the-causal-perception-via-a-spatial-gap)
         - [3D: From launching to triggering](#3d-from-launching-to-triggering)
         - [3E: Launching function](#3e-launching-function)
-        - [3F: Optional challenge](#3e-optional-challenge)
+        - [3F: Optional challenge](#3f-optional-challenge)
     - [Exercise 4: Labeled shapes](#exercise-4-labeled-shapes)
         - [4A: Triangle and hexagon](#4a-triangle-and-hexagon)
         - [4B: Polygon function](#4b-polygon-function)
