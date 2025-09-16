@@ -11,7 +11,8 @@
         - [3B: Disrupting the causal perception via a temporal gap](#3b-disrupting-the-causal-perception-via-a-temporal-gap)
         - [3C: Disrupting the causal perception via a spatial gap](#3c-disrupting-the-causal-perception-via-a-spatial-gap)
         - [3D: From launching to triggering](#3d-from-launching-to-triggering)
-        - [3E: Optional challenge](#3e-optional-challenge)
+        - [3E: Launching function](#3e-launching-function)
+        - [3F: Optional challenge](#3e-optional-challenge)
     - [Exercise 4: Labeled shapes](#exercise-4-labeled-shapes)
         - [4A: Triangle and hexagon](#4a-triangle-and-hexagon)
         - [4B: Polygon function](#4b-polygon-function)
@@ -118,15 +119,23 @@ Things to consider:
 - How do I encode the collision moment between the two squares?
 
 ### 3B: Disrupting the causal perception via a temporal gap
-Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(2000)```) and notice how the sense of causality disappears. Gradually shorten this delay until you find the smallest gap at which the event still feels **non-causal**. Leave that value in the code before pushing to GitHub.
+Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(2000)```) and notice how the sense of causality disappears. Play around with different values of the delay. Can you find the threshold at which the delay does **not** disrupt your impression of causality?
 
 ### 3C: Disrupting the causal perception via a spatial gap
-Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Modify the script by introducing a spatial gap between the two squares. Play around with multiple values. Gradually reduce this gap until you find the smallest distance at which the event still feels **non-causal**. Leave that value in the code before uploading to GitHub.
+Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Modify the script by introducing a spatial gap between the two squares. Play around with different values of the delay. Gradually reduce this gap until you find the threshold at which the gap does **not** disrupt causality.
 
 ### 3D: From launching to triggering
 Create a copy of ```launching.py``` and rename it to ```triggering.py```. Make the green square on the right move at a speed three times faster than the square on the left. Does it still look like the red square caused the green square to move?
 
-### 3E: Optional challenge
+### 3E: Launching function
+Combine everything into a single function that displays a horizontal launching event. The function should take parameters that determine:
+- whether there is a temporal gap,
+- whether there is a spatial gap, and
+- whether the second square moves at the same speed as the first square or at a higher speed.
+
+Save your script as ```launching-function.py```.
+
+### 3F: Optional challenge
 Display three consecutive launching events, but instead of horizontal motion, have the axis of motion be randomly selected each time from a full circle. To simplify things, keep the central green square where it is, and choose a random position for the red one on a circle with radius size equal to 300px. The green square should move toward the red square and launch it **upon contact**. The launched object should travel at the same speed and for the same amount of time as the green square. Save it in a script called ```launching_random_motion.py```.
 
 Hints: 
