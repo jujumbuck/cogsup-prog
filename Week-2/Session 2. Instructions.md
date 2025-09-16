@@ -134,7 +134,7 @@ Combine everything into a single function that displays a horizontal launching e
 - whether there is a spatial gap, and
 - whether the second square moves at the same speed as the first square or at a higher speed.
 
-The program should display the four types of events in succession: Michottean launching, launching with a temporal gap, launching with a spatial gap, and triggering. Save your script as ```launching-function.py```.
+The program should display the four types of events in succession: Michottean launching, launching with a temporal gap, launching with a spatial gap, and triggering. Save your script as ```launching_function.py```.
 
 ### 3F: Optional challenge
 Display three consecutive launching events, but instead of horizontal motion, have the axis of motion be randomly selected each time from a full circle. To simplify things, keep the central green square where it is, and choose a random position for the red one on a circle with radius size equal to 300px. The green square should move toward the red square and launch it **upon contact**. The launched object should travel at the same speed and for the same amount of time as the green square. Save it in a script called ```launching_random_motion.py```.
