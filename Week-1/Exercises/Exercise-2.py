@@ -17,7 +17,10 @@ Write a for-loop that prints out the following line 20 times:
 
 print("Exercise 2.1")
 
-pass
+
+for i in range(20):
+    print(" All work and no play makes Jack a dull boy.")
+
 
 print("---")
 """
@@ -30,7 +33,8 @@ Write a for-loop that prints out the numbers from 0 up to 5 inclusive.
 
 print("Exercise 2.2")
 
-pass
+for i in range(6):
+    print(str(i))
 
 print("---")
 
@@ -45,7 +49,7 @@ Write a for-loop that prints out the EVEN numbers from 2 up to 8 inclusive.
 
 print("Exercise 2.3")
 
-pass
+for in in range()
 
 print("---")
 
