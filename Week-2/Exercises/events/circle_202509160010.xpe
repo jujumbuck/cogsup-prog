@@ -1,7 +1,0 @@
-#Expyriment 1.0.0.dev1 (Python 3.11.6), .xpe-file, coding: UTF-8
-#date: Tue Sep 16 2025 00:10:49
-#sha1: 98aa62
-#modules: 
-#display: size=(800, 600), window_mode=False, opengl=2
-#os: uname_result(system='Darwin', node='Mac.lan', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:51 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8112', machine='arm64')
-Time,Type,Event,Value,Detail,Detail2
