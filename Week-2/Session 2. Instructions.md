@@ -118,11 +118,11 @@ Things to consider:
 - How do I move a square to the left at a given speed?
 - How do I encode the collision moment between the two squares?
 
-### 3B: Disrupting the causal perception via a temporal gap
-Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal lag between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(2000)```) and notice how the sense of causality disappears. Play around with different values of the delay. Can you find the threshold at which the delay does **not** disrupt your impression of causality?
+### 3B: Disrupting the causal perception via a temporal delay
+Create a copy of ```launching.py``` and rename it to ```launching_disrupt_time.py```. Change the code to introduce a temporal delay between the squares' collision and the movement onset of the green square. First, try out a long delay (```exp.clock.wait(2000)```) and notice how the sense of causality disappears. Play around with different values of the delay. Can you find the threshold at which the delay does **not** disrupt your impression of causality?
 
 ### 3C: Disrupting the causal perception via a spatial gap
-Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Modify the script by introducing a spatial gap between the two squares. Play around with different values of the delay. Gradually reduce this gap until you find the threshold at which the gap does **not** disrupt causality.
+Create a copy of ```launching.py``` and rename it to ```launching_disrupt_space.py```. Modify the script by introducing a spatial gap between the two squares. Play around with different values of the gap. Gradually reduce this gap until you find the threshold at which it does **not** disrupt causality.
 
 ### 3D: From launching to triggering
 Create a copy of ```launching.py``` and rename it to ```triggering.py```. Make the green square on the right move at a speed three times faster than the square on the left. Does it still look like the red square caused the green square to move?
