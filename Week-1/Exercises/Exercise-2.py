@@ -49,7 +49,8 @@ Write a for-loop that prints out the EVEN numbers from 2 up to 8 inclusive.
 
 print("Exercise 2.3")
 
-for in in range()
+for i in range(2,10,2):
+    print(str(i))
 
 print("---")
 
@@ -63,7 +64,8 @@ Now write another loop to print 9 through 0 (i.e., backwards).
 
 print("Exercise 2.4")
 
-pass
+for i in range(9,-1,-1):
+    print(str(i))
 
 print("---")
 
@@ -85,7 +87,8 @@ Write code that prints out the following sequence:
 
 print("Exercise 2.5")
 
-pass
+for i in range(9):
+    print("z"*i)
 
 print("---")
 
@@ -110,7 +113,10 @@ of a simple print-statement.
 
 print("Exercise 2.6")
 
-pass
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(str(j),end="")
+    print()
 
 print("---")
 
@@ -139,7 +145,14 @@ your code needs to carry out for a certain value of rows.
 print("Exercise 2.7")
 
 rows = 5
-pass
+
+for i in range(1,rows+1):
+    num_o = ((rows-i) * " ") + ("o" * (2 * i-1))
+    print(num_o)
+
+    
+    
+    
 
 print("---")
 
@@ -169,6 +182,11 @@ on how to align the numbers.
 
 print("Exercise 2.8")
 
-pass
+rows = 10
+
+for i in range(1,rows+1):
+    for j in range(1,rows+1):
+        print("{:4d}".format(i*j), end = "")
+    print()
 
 print("---")
