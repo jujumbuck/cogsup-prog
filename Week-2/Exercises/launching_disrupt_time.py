@@ -23,7 +23,7 @@ for i in range(35): #stop 50 pixels before so that doesnt overlap with greeb squ
     green_square.present(clear=False, update=True)
     exp.clock.wait(20) #wait 20ms per frame
 
-exp.clock.wait(50) #temporal delay max 50 ms or else disrupts impression
+exp.clock.wait(50) #temporal delay max 50 ms or else disrupts impressionla
 
 for i in range(40): #move green square to the left by using a loop that moves it 40 times by 10 pixels to the right 
     green_square.move((10,0))

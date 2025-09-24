@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Wed Sep 24 2025 12:05:54
+#sha1: 6fc851
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Julias-MacBook-Pro.local', release='24.3.0', version='Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+460,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x107f2b1a0>'
+460,stderr,received,'Traceback (most recent call last):'
+460,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+460,stderr,received,'    if self._compression_filename is not None:'
+460,stderr,received,"AttributeError: 'Line' object has no attribute '_compression_filename'"
+461,stderr,received,'Traceback (most recent call last):'
+461,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-2/Exercises/labeled_shapes.py", line 15, in <module>\n    line_triangle = stimuli.Line(start_point=(-150,0),end_point=(-150,100))'
+461,stderr,received,"TypeError: Line.__init__() missing 1 required positional argument: 'line_width'"

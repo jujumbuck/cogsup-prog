@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Wed Sep 24 2025 11:58:39
+#sha1: 9433fb
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Julias-MacBook-Pro.local', release='24.3.0', version='Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+547,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x1087871a0>'
+547,stderr,received,'Traceback (most recent call last):'
+547,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+548,stderr,received,'    if self._compression_filename is not None:'
+548,stderr,received,"AttributeError: 'Shape' object has no attribute '_compression_filename'"
+548,stderr,received,'Traceback (most recent call last):'
+548,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-2/Exercises/labeled_shapes.py", line 12, in <module>\n    purple_triangle = stimuli.Shape(vertex_list=geometry.vertices_regular_polygon(3, 50), coulour=(128,0,128), position=(-150,0))'
+548,stderr,received,"TypeError: Shape.__init__() got an unexpected keyword argument 'coulour'. Did you mean 'colour'?"

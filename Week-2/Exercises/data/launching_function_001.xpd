@@ -1,8 +1,8 @@
 #Expyriment 1.0.0 (Python 3.13.7), .xpd-file, coding: UTF-8
-#date: Sun Sep 21 2025 20:04:31
+#date: Sat Sep 20 2025 19:07:26
 #--EXPERIMENT INFO
-#e mainfile: launching.py
-#e sha1: 1f8cda
+#e mainfile: launching_function.py
+#e sha1: e6be14
 #e modules: 
 #e Experiment: Two Squares
 #e no between subject factors
