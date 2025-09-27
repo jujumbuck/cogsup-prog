@@ -1,0 +1,30 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Sep 25 2025 17:06:21
+#sha1: b3bb58
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Julias-MacBook-Pro.local', release='24.3.0', version='Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+541,Stimulus,presented,0
+541,Stimulus,presented,1
+541,Stimulus,presented,2
+541,Stimulus,presented,3
+541,Stimulus,presented,4
+541,Stimulus,presented,5
+541,Stimulus,presented,6
+542,Stimulus,presented,7
+542,Stimulus,presented,8
+542,Stimulus,presented,9
+542,Stimulus,presented,10
+542,Stimulus,presented,11
+542,Stimulus,presented,12
+542,Stimulus,presented,13
+542,Stimulus,presented,14
+543,Stimulus,presented,15
+543,Stimulus,presented,16
+543,Stimulus,presented,17
+543,Stimulus,presented,18
+543,Stimulus,presented,19
+2993,Keyboard,received,13,wait
+2993,Experiment,ended
+2998,Stimulus,presented,20

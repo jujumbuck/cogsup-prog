@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Sep 25 2025 16:30:31
+#sha1: a714b7
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Julias-MacBook-Pro.local', release='24.3.0', version='Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+525,stderr,received,'Traceback (most recent call last):'
+525,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-3/Exercises/hermann-grid.py", line 24, in <module>\n    hermann_grid(sq_size=50, gap=10, num_rows=4, num_col=5, sq_color=(0,0,0), bckgrnd_color=(255,255,255))\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+525,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-3/Exercises/hermann-grid.py", line 16, in hermann_grid\n    square.present(clear=False, update=False)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+525,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 1171, in present\n    self.preload(inhibit_ogl_compress=True)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+525,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 1059, in preload\n    self._get_surface(),\n    ~~~~~~~~~~~~~~~~~^^'
+525,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 490, in _get_surface\n    tmp = self._create_surface()'
+525,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_rectangle.py", line 237, in _create_surface\n    surface = pygame.surface.Surface(\n              ~~~~~~~~~~~~~~~~~~~~~~^\n        self._size, pygame.SRCALPHA).convert_alpha()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+525,stderr,received,'ValueError: size needs to be (number width, number height)'
