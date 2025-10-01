@@ -17,14 +17,8 @@ Write a for-loop that prints out the following line 20 times:
 
 print("Exercise 2.1")
 
-<<<<<<< HEAD
-
-for i in range(20):
-    print(" All work and no play makes Jack a dull boy.")
-
-=======
-pass
->>>>>>> upstream/main
+for _ in range(20):
+    print("All work and no play makes Jack a dull boy.")
 
 print("---")
 """
@@ -37,12 +31,8 @@ Write a for-loop that prints out the numbers from 0 up to 5 inclusive.
 
 print("Exercise 2.2")
 
-<<<<<<< HEAD
 for i in range(6):
-    print(str(i))
-=======
-pass
->>>>>>> upstream/main
+    print(i)
 
 print("---")
 
@@ -57,12 +47,8 @@ Write a for-loop that prints out the EVEN numbers from 2 up to 8 inclusive.
 
 print("Exercise 2.3")
 
-<<<<<<< HEAD
-for i in range(2,10,2):
-    print(str(i))
-=======
-pass
->>>>>>> upstream/main
+for i in range(2, 9, 2):
+    print(i)
 
 print("---")
 
@@ -76,12 +62,8 @@ Now write another loop to print 9 through 0 (i.e., backwards).
 
 print("Exercise 2.4")
 
-<<<<<<< HEAD
-for i in range(9,-1,-1):
-    print(str(i))
-=======
-pass
->>>>>>> upstream/main
+for i in range(9, -1, -1):
+    print(i)
 
 print("---")
 
@@ -103,12 +85,10 @@ Write code that prints out the following sequence:
 
 print("Exercise 2.5")
 
-<<<<<<< HEAD
-for i in range(9):
-    print("z"*i)
-=======
-pass
->>>>>>> upstream/main
+s = ''
+for _ in range(8):
+    s += 'z'
+    print(s)
 
 print("---")
 
@@ -133,14 +113,10 @@ of a simple print-statement.
 
 print("Exercise 2.6")
 
-<<<<<<< HEAD
-for i in range(1,6):
-    for j in range(1,i+1):
-        print(str(j),end="")
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end = '')
     print()
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -168,19 +144,9 @@ your code needs to carry out for a certain value of rows.
 
 print("Exercise 2.7")
 
-rows = 5
-<<<<<<< HEAD
-
-for i in range(1,rows+1):
-    num_o = ((rows-i) * " ") + ("o" * (2 * i-1))
-    print(num_o)
-
-    
-    
-    
-=======
-pass
->>>>>>> upstream/main
+rows = 20
+for i in range(rows):
+    print(' ' * (rows - i - 1) + 'o' * (2 * i + 1) + ' ' * (rows - i - 1))
 
 print("---")
 
@@ -201,27 +167,23 @@ Write code that prints the multiplication table:
  9  18  27  36  45  54  63  72  81  90
  10  20  30  40  50  60  70  80  90 100
 
-<<<<<<< HEAD
-You should be able to give any value to row and see a pyramid. 
-
-=======
->>>>>>> upstream/main
 Hint: One of the two links at the top of this script contains helpful information
-on how to align the numbers.
+on how to align the numbers perfectly.
 ------
 """
 
 print("Exercise 2.8")
 
-<<<<<<< HEAD
-rows = 10
+numbers = range(1, 11)
 
-for i in range(1,rows+1):
-    for j in range(1,rows+1):
-        print("{:4d}".format(i*j), end = "")
+for num1 in numbers:
+    for num2 in numbers:
+        print(f'{num1 * num2 :3d}', end=' ')
     print()
-=======
-pass
->>>>>>> upstream/main
+
+for num1 in numbers:
+    for num2 in numbers:
+        print(num1 * num2, end='\t')
+    print()
 
 print("---")

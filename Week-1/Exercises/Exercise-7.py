@@ -6,6 +6,7 @@ should be programmed to keep guessing at it until it finds the number you are th
 
 At every step, add comments reflecting the logic of what the particular line of code is (supposed 
 to be) doing. 
+<<<<<<< HEAD
 """
 
 from random import randint
@@ -41,3 +42,6 @@ def guessing():
             print('pls type higher,lower or correct')
 
 guessing()
+=======
+"""
+>>>>>>> upstream/main

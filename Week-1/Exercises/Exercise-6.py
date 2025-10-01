@@ -6,6 +6,7 @@ Hint: Write an is_factor helper function.
 
 def is_factor(d, n):
     """True iff (if and only if) d is a divisor of n."""
+<<<<<<< HEAD
     return n%d == 0
 
 def is_prime(n):
@@ -23,3 +24,12 @@ for num in range(1, 10001):
 
 print(list_of_primes)
 
+=======
+    pass
+
+def is_prime(n):
+    pass
+
+list_of_primes = []
+print(list_of_primes)
+>>>>>>> upstream/main

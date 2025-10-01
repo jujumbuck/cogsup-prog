@@ -21,25 +21,16 @@ The function should take one argument called 'rows' and print a triangle out of 
 
 sprint("Exercise 5.1")
 
-<<<<<<< HEAD
-
-def print_triangle_o(rows):
-    for i in range(1,rows+1):
-        num_o = ((rows-i) * " ") + ("o" * (2 * i-1))
-        print(num_o)
-sprint("---")
-
-#print_triangle_o(5)
-=======
 def print_triangle_o(rows):
     """
     Print a centered triangle made of the letter 'o'.
     """
-    pass
+
+    for i in range(rows):
+        print(' ' * (rows - i - 1) + 'o' * (2 * i + 1) + ' ' * (rows - i - 1))
 
 sprint("---")
 
->>>>>>> upstream/main
 """
 Exercise 5.2
 
@@ -50,22 +41,13 @@ You can assume that all the elements of the list are numbers.
 """
 
 sprint("Exercise 5.2")
-<<<<<<< HEAD
-lst1 = [1, 4, -6, 7, 2, 3, 9, 11, 6]
-
-def prod_list_easy(lst):
-    n=1
-    for i in lst:
-     n=n*i
-    return n
-
-#print(prod_list_easy(lst1))
-=======
 
 def prod_list_easy(lst):
     """Returns the product of the elements in a number list iteratively."""
-    pass
->>>>>>> upstream/main
+    prod = 1
+    for element in lst:
+        prod *= element
+    return prod
 
 sprint("---")
 
@@ -85,21 +67,17 @@ Hint: Can you think of a recursive way to do it?
 sprint("Exercise 5.3")
 
 def prod_list_rec(lst):
-<<<<<<< HEAD
-   if len(lst) == 0:       
+    """Returns the product of the elements in a number list recursively."""
+    if not lst:
         return 1
-   else:
+    
+    if len(lst) == 1:
+        return lst[0]
+    
     return lst[0] * prod_list_rec(lst[1:])
 
 sprint("---")
-#print(prod_list_rec(lst1))
-=======
-    """Returns the product of the elements in a number list recursively."""
-    pass
 
-sprint("---")
-
->>>>>>> upstream/main
 """
 Exercise 5.4
 
@@ -107,8 +85,6 @@ Task:
 ------
 Take the function body you wrote in the previous exercise and modify it so that it stops
 executing in case not all of the elements of the list are numbers.
-
-Hint: The product of the empty set is 1.
 ------
 """
 
@@ -121,46 +97,31 @@ def prod_list_rec_full(lst):
     If the list contains non-numeric elements, a message is printed out
     and the function returns nothing.
     """
-    pass
+    non_numeric = [el for el in lst if not isinstance(el, (int, float))]
+    if non_numeric:
+        sprint(f"List contains non-numeric element(s): {non_numeric}")
+        return
+
+    if not lst:
+        return 1
+
+    if len(lst) == 1:
+        return lst[0]
     
+    return lst[0] * prod_list_rec(lst[1:])
+
 sprint("---")
 
-"""
-Exercise 5.5
-
-Task:
-------
-Once you have solved Exercises 5.1 to 5.4, uncomment the following lines of code
-and run the script again. The lines of code test the functions you wrote against
-expected outputs. If you solved the exercises correctly, the script will tell you.
-------
-"""
-
-### Run test cases
-<<<<<<< HEAD
+# --- Run the tests ---
 if __name__ == "__main__":
     from testcases import (
-        #run_tests_ex51,
+        run_tests_ex51,
         run_tests_ex52,
         run_tests_ex53,
         run_tests_ex54,
     )
 
-    #run_tests_ex51()
+    run_tests_ex51()
     run_tests_ex52()
     run_tests_ex53()
     run_tests_ex54()
-=======
-# if __name__ == "__main__":
-#     from testcases import (
-#         run_tests_ex51,
-#         run_tests_ex52,
-#         run_tests_ex53,
-#         run_tests_ex54,
-#     )
-
-#     run_tests_ex51()
-#     run_tests_ex52()
-#     run_tests_ex53()
-#     run_tests_ex54()
->>>>>>> upstream/main

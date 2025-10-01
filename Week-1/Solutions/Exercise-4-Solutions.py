@@ -11,21 +11,14 @@ Exercise 4.1
 
 Task:
 ------
-Print the sum of the values in the dictionary.
+Print the sum of all values in the dictionary.
 """
 
 dct = {'a': 3, 'b': 7, 'c': -2, 'd': 10, 'e': 5}
 
 print("Exercise 4.1")
 
-<<<<<<< HEAD
-n=0
-for value in dct.values():
-    n= n+value
-print(n)
-=======
-pass
->>>>>>> upstream/main
+print(sum(dct.values()))
 
 print("---")
 
@@ -34,23 +27,26 @@ Exercise 4.2
 
 Task:
 ------
-Print the key that has the largest value in dct.
+Print the key that has the largest value in the dictionary.
 """
 
 print("Exercise 4.2")
 
-<<<<<<< HEAD
-keys_list = list(dct.keys())
-largest = keys_list[0]
+# Solution 1
+max_value = max(dct.values())
+for k, v in dct.items():
+    if v == max_value:
+        print(k)
 
-for key in dct:
-    if dct[largest] < dct[key] :
-        largest = key
+# Solution 2
+max_value = float("-Inf")
 
-print(largest)
-=======
-pass
->>>>>>> upstream/main
+for k, v in dct.items():
+    if v > max_value:
+        max_value = v
+        max_key = k
+
+print(max_key)
 
 print("---")
 
@@ -59,20 +55,13 @@ Exercise 4.3
 
 Task:
 ------
-Create a new dictionary with the squares of all the values in dct.
+Create a new dictionary with the squares of all values in the dictionary.
 """
 
 print("Exercise 4.3")
 
-<<<<<<< HEAD
-dct_2={}
-n=0
-for key in dct:
-    dct_2[key] = dct[key] ** 2
-print(dct_2)
-=======
-pass
->>>>>>> upstream/main
+squared = {k: v**2 for k, v in dct.items()}
+print(squared)
 
 print("---")
 
@@ -81,19 +70,13 @@ Exercise 4.4
 
 Task:
 ------
-Print only the keys in dct whose values are even numbers.
+Print only the keys whose values are even numbers.
 """
 
 print("Exercise 4.4")
 
-<<<<<<< HEAD
-for key in dct:
-    if dct[key]%2 == 0:
-      print(key)
-
-=======
-pass
->>>>>>> upstream/main
+evens = [k for k, v in dct.items() if v % 2 == 0]
+print(evens)
 
 print("---")
 
@@ -102,21 +85,16 @@ Exercise 4.5
 
 Task:
 ------
-Create a new dictionary that swaps the keys and values in dct.
+Swap keys and values in the dictionary. 
+
+Hint: Assume that all values are unique.
+------
 """
 
 print("Exercise 4.5")
 
-<<<<<<< HEAD
-dict2 = {}
-for key in dct:
-    val = dct[key]
-    dict2[val] = key
-
-print(dict2)
-=======
-pass
->>>>>>> upstream/main
+swapped = {v: k for k, v in dct.items()}
+print(swapped)
 
 print("---")
 
@@ -129,19 +107,15 @@ Count the number of times each letter appears in the string 'ccctcctttttcc'
 and print the resulting dictionary.
 """
 
-s = 'ccctcctttttcc'
+shapes = {3: "triangle", 4: "square"}       
 
 print("Exercise 4.6")
-<<<<<<< HEAD
-n=0
-for i in range(len(s)):
-    n=n+1
 
-print(n)
-=======
-
-pass
->>>>>>> upstream/main
+s = 'ccctcctttttcc'
+counts = {}
+for ch in s:
+    counts[ch] = counts.get(ch, 0) + 1
+print(counts)
 
 print("---")
 
@@ -159,16 +133,9 @@ responses_mapping = {'j':'jazz','p':'pop'}
 responses = 'jjjpjjpppppjj'
 
 print("Exercise 4.7")
-<<<<<<< HEAD
-list_words=[]
-for i in range(len(responses)):
-    resp = responses[i]
-    list_words.append(responses_mapping[resp])
-print(list_words)
-=======
 
-pass
->>>>>>> upstream/main
+words = [responses_mapping[ch] for ch in responses]
+print(words)
 
 print("---")
 
@@ -182,16 +149,11 @@ Merge the following two dictionaries into one:
 """
 
 print("Exercise 4.8")
-<<<<<<< HEAD
-dict1={'a': 1, 'b': 2}
-dict2={'c': 3, 'd': 4}
-new_dict = dict1.copy()
-new_dict.update(dict2)
-print(new_dict)
-=======
 
-pass
->>>>>>> upstream/main
+d1 = {'a': 1, 'b': 2}
+d2 = {'c': 3, 'd': 4}
+
+print(d1|d2)
 
 print("---")
 
@@ -206,14 +168,10 @@ create a new one whose keys are sorted alphabetically.
 
 print("Exercise 4.9")
 
-<<<<<<< HEAD
-dict_animals = {'zebra': 10, 'dolphin': 25, 'alligator': 3, 'monkey': 5, 'pig': 9}
-sorted_dict = dict(sorted(dict_animals.items()))
-print(sorted_dict)
-=======
-pass
+animals = {'zebra': 7, 'dolphin': 25, 'alligator': 30, 'monkey': 5, 'pig': 9}
+sorted_keys = {k: animals[k] for k in sorted(animals)}
+print(sorted_keys)
 
->>>>>>> upstream/main
 print("---")
 
 """
@@ -226,13 +184,13 @@ create a new one whose values appear in increasing order.
 """
 
 print("Exercise 4.10")
-<<<<<<< HEAD
-animals = {'zebra': 10, 'dolphin': 25, 'alligator': 3, 'monkey': 5, 'pig': 9}
-sorted_values = dict(sorted(animals.items(), key=lambda item: item[1]))
-print(sorted_values)
-=======
 
-pass
->>>>>>> upstream/main
+# Solution 1
+sorted_values_1 = {k: v for k, v in sorted(animals.items(), key = lambda item: item[1])}
+print(sorted_values_1)
+
+# Solution 2
+sorted_values_2 = {k: v for v, k in sorted((v, k) for k, v in animals.items())}
+print(sorted_values_2)
 
 print("---")
