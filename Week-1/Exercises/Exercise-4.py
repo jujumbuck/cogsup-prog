@@ -18,14 +18,10 @@ dct = {'a': 3, 'b': 7, 'c': -2, 'd': 10, 'e': 5}
 
 print("Exercise 4.1")
 
-<<<<<<< HEAD
 n=0
 for value in dct.values():
     n= n+value
 print(n)
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -39,7 +35,6 @@ Print the key that has the largest value in dct.
 
 print("Exercise 4.2")
 
-<<<<<<< HEAD
 keys_list = list(dct.keys())
 largest = keys_list[0]
 
@@ -48,9 +43,6 @@ for key in dct:
         largest = key
 
 print(largest)
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -64,15 +56,11 @@ Create a new dictionary with the squares of all the values in dct.
 
 print("Exercise 4.3")
 
-<<<<<<< HEAD
 dct_2={}
 n=0
 for key in dct:
     dct_2[key] = dct[key] ** 2
 print(dct_2)
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -86,14 +74,10 @@ Print only the keys in dct whose values are even numbers.
 
 print("Exercise 4.4")
 
-<<<<<<< HEAD
 for key in dct:
     if dct[key]%2 == 0:
       print(key)
 
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -107,16 +91,12 @@ Create a new dictionary that swaps the keys and values in dct.
 
 print("Exercise 4.5")
 
-<<<<<<< HEAD
 dict2 = {}
 for key in dct:
     val = dct[key]
     dict2[val] = key
 
 print(dict2)
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -132,16 +112,11 @@ and print the resulting dictionary.
 s = 'ccctcctttttcc'
 
 print("Exercise 4.6")
-<<<<<<< HEAD
 n=0
 for i in range(len(s)):
     n=n+1
 
 print(n)
-=======
-
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -159,16 +134,11 @@ responses_mapping = {'j':'jazz','p':'pop'}
 responses = 'jjjpjjpppppjj'
 
 print("Exercise 4.7")
-<<<<<<< HEAD
 list_words=[]
 for i in range(len(responses)):
     resp = responses[i]
     list_words.append(responses_mapping[resp])
 print(list_words)
-=======
-
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -182,16 +152,11 @@ Merge the following two dictionaries into one:
 """
 
 print("Exercise 4.8")
-<<<<<<< HEAD
 dict1={'a': 1, 'b': 2}
 dict2={'c': 3, 'd': 4}
 new_dict = dict1.copy()
 new_dict.update(dict2)
 print(new_dict)
-=======
-
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -206,14 +171,9 @@ create a new one whose keys are sorted alphabetically.
 
 print("Exercise 4.9")
 
-<<<<<<< HEAD
 dict_animals = {'zebra': 10, 'dolphin': 25, 'alligator': 3, 'monkey': 5, 'pig': 9}
 sorted_dict = dict(sorted(dict_animals.items()))
 print(sorted_dict)
-=======
-pass
-
->>>>>>> upstream/main
 print("---")
 
 """
@@ -226,13 +186,8 @@ create a new one whose values appear in increasing order.
 """
 
 print("Exercise 4.10")
-<<<<<<< HEAD
 animals = {'zebra': 10, 'dolphin': 25, 'alligator': 3, 'monkey': 5, 'pig': 9}
 sorted_values = dict(sorted(animals.items(), key=lambda item: item[1]))
 print(sorted_values)
-=======
-
-pass
->>>>>>> upstream/main
 
 print("---")

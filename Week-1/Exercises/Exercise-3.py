@@ -18,15 +18,10 @@ Write code that prints the sum of the elements in the following list.
 lst = [1, 4, -6, 7, 2, 3, 9, 11, 6] # In all exercises in this script, you will work with this list
 
 print("Exercise 3.1")
-<<<<<<< HEAD
 n=0
 for i in lst:
     n=n+i
 print(n)
-=======
-
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -40,14 +35,10 @@ Print the product of the elements in the list.
 
 print("Exercise 3.2")
 
-<<<<<<< HEAD
 n=1
 for i in lst:
     n=n*i
 print(n)
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -61,14 +52,10 @@ Print the sum of the squares of the list.
 
 print("Exercise 3.3")
 
-<<<<<<< HEAD
 n=0
 for i in lst:
     n=n+(i**2)
 print(n)
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -82,15 +69,11 @@ Print the largest element of the list.
 
 print("Exercise 3.4")
 
-<<<<<<< HEAD
 n=lst[0]
 for i in lst:
     if n < i:
       n=i
 print(n)
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -104,15 +87,11 @@ Print the largest element of the list.
 
 print("Exercise 3.5")
 
-<<<<<<< HEAD
 n=lst[0]
 for i in lst:
     if n < i:
       n=i
 print(n)
 
-=======
-pass
->>>>>>> upstream/main
 
 print("---")

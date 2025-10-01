@@ -17,14 +17,10 @@ Write a for-loop that prints out the following line 20 times:
 
 print("Exercise 2.1")
 
-<<<<<<< HEAD
 
 for i in range(20):
     print(" All work and no play makes Jack a dull boy.")
 
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 """
@@ -37,12 +33,8 @@ Write a for-loop that prints out the numbers from 0 up to 5 inclusive.
 
 print("Exercise 2.2")
 
-<<<<<<< HEAD
 for i in range(6):
     print(str(i))
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -57,12 +49,8 @@ Write a for-loop that prints out the EVEN numbers from 2 up to 8 inclusive.
 
 print("Exercise 2.3")
 
-<<<<<<< HEAD
 for i in range(2,10,2):
     print(str(i))
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -76,12 +64,8 @@ Now write another loop to print 9 through 0 (i.e., backwards).
 
 print("Exercise 2.4")
 
-<<<<<<< HEAD
 for i in range(9,-1,-1):
     print(str(i))
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -103,12 +87,8 @@ Write code that prints out the following sequence:
 
 print("Exercise 2.5")
 
-<<<<<<< HEAD
 for i in range(9):
     print("z"*i)
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -133,14 +113,10 @@ of a simple print-statement.
 
 print("Exercise 2.6")
 
-<<<<<<< HEAD
 for i in range(1,6):
     for j in range(1,i+1):
         print(str(j),end="")
     print()
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -169,7 +145,6 @@ your code needs to carry out for a certain value of rows.
 print("Exercise 2.7")
 
 rows = 5
-<<<<<<< HEAD
 
 for i in range(1,rows+1):
     num_o = ((rows-i) * " ") + ("o" * (2 * i-1))
@@ -178,9 +153,6 @@ for i in range(1,rows+1):
     
     
     
-=======
-pass
->>>>>>> upstream/main
 
 print("---")
 
@@ -201,11 +173,8 @@ Write code that prints the multiplication table:
  9  18  27  36  45  54  63  72  81  90
  10  20  30  40  50  60  70  80  90 100
 
-<<<<<<< HEAD
 You should be able to give any value to row and see a pyramid. 
 
-=======
->>>>>>> upstream/main
 Hint: One of the two links at the top of this script contains helpful information
 on how to align the numbers.
 ------
@@ -213,15 +182,11 @@ on how to align the numbers.
 
 print("Exercise 2.8")
 
-<<<<<<< HEAD
 rows = 10
 
 for i in range(1,rows+1):
     for j in range(1,rows+1):
         print("{:4d}".format(i*j), end = "")
     print()
-=======
-pass
->>>>>>> upstream/main
 
 print("---")

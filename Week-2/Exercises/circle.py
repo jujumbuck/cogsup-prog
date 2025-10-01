@@ -17,11 +17,8 @@ circle = stimuli.Circle(radius=50)
 control.start(subject_id=1)
 
 # Present the fixation cross
-<<<<<<< HEAD
 #clear wtv on back buffer will be cleared 
 #update means show and flip with back buffer
-=======
->>>>>>> upstream/main
 fixation.present(clear=True, update=True)
 
 # Leave it on-screen for 1,000 ms
