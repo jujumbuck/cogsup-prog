@@ -2,14 +2,38 @@ from expyriment import design, control, stimuli
 import random
 
 def load(stims):
-    pass
+    for stim in (stims):
+        stim.preload()
 
 def timed_draw(stims):
-    pass
-    # return the time it took to draw
+    #initial time
+    t0 = exp.clock.time
+    #loop through stims and draw them updating only last stim
+    for i, stim in enumerate(stims):
+        stim.present(clear=(i == 0), update=(i == len(stims) - 1))
+    #time of draw
+    dt = exp.clock.time - t0
+    return dt
+    
 
 def present_for(stims, t=1000):
-    pass
+    #time cant be negative
+    if t <= 0:
+        return 0
+    
+    t0 = exp.clock.time
+
+    #same as before
+    for i, stim in enumerate(stims):
+        stim.present(clear=(i == 0), update=(i == len(stims) - 1))
+    dt = exp.clock.time - t0
+    
+    #make sur that its drawn for the time t given
+    remainder = t - dt
+    if remainder > 0:
+        exp.clock.wait(remainder)
+
+    return dt
 
 
 """ Test functions """

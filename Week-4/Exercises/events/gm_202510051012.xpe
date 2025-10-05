@@ -1,0 +1,11 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Oct 05 2025 10:12:48
+#sha1: 6497cb
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='Julias-MacBook-Pro.local', release='24.3.0', version='Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+3503,stderr,received,'Traceback (most recent call last):'
+3503,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-4/Exercises/gm.py", line 50, in <module>\n    run_trial(r=50, isi_frames=1, with_tags=False)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+3503,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-4/Exercises/gm.py", line 41, in run_trial\n    f1, f2 = make_circles(r, with_tags=with_tags)\n             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^'
+3503,stderr,received,"TypeError: make_circles() got an unexpected keyword argument 'with_tags'"

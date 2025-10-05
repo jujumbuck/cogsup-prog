@@ -10,7 +10,7 @@ square = stimuli.Rectangle(size=(100, 100), line_width=5)
 
 control.start(subject_id=1)
 
-fixation.present(clear=True, update=False) #change to update to false so it doesnt update and allows for the square to appear at the same time
+fixation.present(clear=True, update=False) #update to false
 exp.clock.wait(500)
 
 square.present(clear=False, update=True)
