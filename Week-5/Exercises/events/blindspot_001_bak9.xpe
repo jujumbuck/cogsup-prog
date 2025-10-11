@@ -1,0 +1,18 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sat Oct 11 2025 20:13:53
+#sha1: a31360
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Julias-MacBook-Pro.local', release='24.3.0', version='Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+997,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+997,design,logged,
+997,Experiment,started
+1009,Stimulus,presented,1
+1887,Keyboard,received,32,wait
+1887,stderr,received,'Traceback (most recent call last):'
+1887,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-5/Exercises/blindspot.py", line 63, in <module>\n    run_trial("left")\n    ~~~~~~~~~^^^^^^^^'
+1887,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-5/Exercises/blindspot.py", line 58, in run_trial\n    x,y,size = make_circle(pos1,size1=30,fixation=fixation)\n               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1887,stderr,received,"TypeError: make_circle() got an unexpected keyword argument 'fixation'"

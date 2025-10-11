@@ -1,0 +1,21 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sat Oct 11 2025 19:10:05
+#sha1: 06279f
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Julias-MacBook-Pro.local', release='24.3.0', version='Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+906,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+906,design,logged,
+906,Experiment,started
+906,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x10a187240>'
+906,stderr,received,'Traceback (most recent call last):'
+906,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+907,stderr,received,'    if self._compression_filename is not None:'
+907,stderr,received,"AttributeError: 'TextScreen' object has no attribute '_compression_filename'"
+907,stderr,received,'Traceback (most recent call last):'
+907,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-5/Exercises/blindspot.py", line 61, in <module>\n    run_trial("left")\n    ~~~~~~~~~^^^^^^^^'
+907,stderr,received,'  File "/Users/juliazibrev/Documents/core-1/Assignments/Week-5/Exercises/blindspot.py", line 53, in run_trial\n    instructions = stimuli.TextScreen(instructions_text)'
+907,stderr,received,"TypeError: TextScreen.__init__() missing 1 required positional argument: 'text'"
