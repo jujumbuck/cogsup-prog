@@ -6,7 +6,7 @@ import random
 KEYS = [K_j, K_f]
 TRIAL_TYPES = ["match","mismatch"]
 COLORS = ["red","blue","green","orange"]
-#[(255,0,0),(0,0,255),(0,255,0),(255,165,0)]
+
 
 N_BLOCKS = 2
 N_TRIALS_IN_BLOCK = 32
@@ -56,7 +56,7 @@ control.initialize(exp)
 fixation = stimuli.FixCross()
 fixation.preload()
 
-stims = stims = {w: {c: stimuli.TextLine(w, text_colour=c) for c in COLORS} for w in COLORS}
+stims = {w: {c: stimuli.TextLine(w, text_colour=c) for c in COLORS} for w in COLORS}
 load([stims[w][c] for w in COLORS for c in COLORS])
 
 feedback_correct = stimuli.TextLine(FEEDBACK_CORRECT)

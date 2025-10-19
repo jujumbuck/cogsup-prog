@@ -1,0 +1,86 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sat Oct 18 2025 15:46:38
+#sha1: b90ca2
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Julias-MacBook-Pro.local', release='24.3.0', version='Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+990,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+991,design,logged,
+991,Experiment,started
+1000,Stimulus,presented,1
+4079,Keyboard,received,32,wait
+4279,Stimulus,presented,0
+4280,Stimulus,presented,2
+4316,Stimulus,presented,0
+4317,Stimulus,presented,3
+4355,Stimulus,presented,0
+4355,Stimulus,presented,4
+4388,Stimulus,presented,0
+4388,Stimulus,presented,5
+4422,Stimulus,presented,0
+4422,Stimulus,presented,6
+4455,Stimulus,presented,0
+4455,Stimulus,presented,7
+4488,Stimulus,presented,0
+4488,Stimulus,presented,8
+4522,Stimulus,presented,0
+4522,Stimulus,presented,9
+4555,Stimulus,presented,0
+4555,Stimulus,presented,10
+4588,Stimulus,presented,0
+4588,Stimulus,presented,11
+4622,Stimulus,presented,0
+4622,Stimulus,presented,12
+4655,Stimulus,presented,0
+4655,Stimulus,presented,13
+4688,Stimulus,presented,0
+4689,Stimulus,presented,14
+4722,Stimulus,presented,0
+4722,Stimulus,presented,15
+4755,Stimulus,presented,0
+4755,Stimulus,presented,16
+4788,Stimulus,presented,0
+4788,Stimulus,presented,17
+4822,Stimulus,presented,0
+4822,Stimulus,presented,18
+4855,Stimulus,presented,0
+4855,Stimulus,presented,19
+4888,Stimulus,presented,0
+4888,Stimulus,presented,20
+4893,Keyboard,received,32,check
+4900,Stimulus,presented,22
+5873,Keyboard,received,32,wait
+6073,Stimulus,presented,21
+6073,Stimulus,presented,23
+6107,Stimulus,presented,21
+6107,Stimulus,presented,24
+6138,Stimulus,presented,21
+6139,Stimulus,presented,25
+6171,Stimulus,presented,21
+6172,Stimulus,presented,26
+6205,Stimulus,presented,21
+6205,Stimulus,presented,27
+6238,Stimulus,presented,21
+6239,Stimulus,presented,28
+6272,Stimulus,presented,21
+6272,Stimulus,presented,29
+6305,Stimulus,presented,21
+6305,Stimulus,presented,30
+6338,Stimulus,presented,21
+6338,Stimulus,presented,31
+6372,Stimulus,presented,21
+6372,Stimulus,presented,32
+6405,Stimulus,presented,21
+6405,Stimulus,presented,33
+6438,Stimulus,presented,21
+6438,Stimulus,presented,34
+6472,Stimulus,presented,21
+6472,Stimulus,presented,35
+6475,Keyboard,received,32,check
+6483,Stimulus,presented,36
+6974,Keyboard,received,32,wait
+6974,Experiment,ended
+6974,Data,saved
