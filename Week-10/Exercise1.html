@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="https://unpkg.com/jspsych@8.0.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
+    <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+  <script type="text/javascript">
+    const jsPsych = initJsPsych({
+      on_finish: function(){
+        jsPsych.data.get().localSave("csv", "ex1_jspsych_results.csv");
+      }
+    });
+
+    const key1Trial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: 'press the same key:j',
+      choices: ['j']
+    };
+
+    const key2Trial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: 'press the same key:j',
+      choices: ['j']
+    };
+    const key3Trial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: 'press the same key:f',
+      choices: ['f']
+    };
+    const key4Trial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: 'press the same key:j',
+      choices: ['j']
+    };
+    const key5Trial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: 'press the same key:j',
+      choices: ['j']
+    };
+    const key6Trial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: 'press the same key:f',
+      choices: ['f']
+    };
+
+   
+
+
+
+    let timeline = [key1Trial,  key2Trial,  key3Trial,  key4Trial, key5Trial, key6Trial];
+
+    jsPsych.run(timeline);
+  </script>
+</html>
