@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="https://unpkg.com/jspsych@8.0.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
+    <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+
+  <script type="text/javascript">
+    const NUMBER_OF_TRIALS_PER_KEY = 10;
+    const KEYS = ['r', 'b','y','g'];
+    const BLANK_DURATION = 50;
+    const COLORS = ['red', 'blue','yellow','green'];
+    const COLOR_NAMES = ['RED', 'BLUE', 'YELLOW', 'GREEN'];
+
+    function createKeyPressTrial(targetKey, keys, blankDuration, isCongruent){
+      let blankTrial = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: "",
+        trial_duration: blankDuration,
+        choices: [],
+      };
+
+      let fixationTrial = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: "+",
+        trial_duration: 500,
+        choices: [],
+      };
+
+      let targetColorIndex = KEYS.indexOf(targetKey);
+
+      let nameIndex;
+      if (isCongruent) {
+        nameIndex = targetColorIndex;
+      } else {
+        let otherNames = COLOR_NAMES.map((v,i)=>i).filter(i => i !== targetColorIndex);
+        nameIndex = otherNames[Math.floor(Math.random() * otherNames.length)];
+      }
+
+      let stimulusDisplayTrial = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: `<p style='color: ${COLORS[targetColorIndex]};'>${COLOR_NAMES[nameIndex]}</p>`,
+        choices: keys,
+      }
+
+      return { timeline: [blankTrial, fixationTrial, stimulusDisplayTrial] };
+    }
+
+    function createShuffledListOfTrials(keys, trialsPerKey, blankDuration){
+      let trials = [];
+
+      for (let key of keys) {
+        let nCongruent = trialsPerKey / 2;
+        let nIncongruent = trialsPerKey / 2;
+
+        for (let i = 0; i < nCongruent; i++) {
+          trials.push(createKeyPressTrial(key, keys, blankDuration, true));
+        }
+        for (let i = 0; i < nIncongruent; i++) {
+          trials.push(createKeyPressTrial(key, keys, blankDuration, false));
+        }
+      }
+
+      return jsPsych.randomization.shuffle(trials);
+    }
+  </script>
+
+  <script type="text/javascript">
+    const jsPsych = initJsPsych({
+      on_finish: function(){
+        jsPsych.data.get().localSave("csv", "demo_jspsych_results.csv");
+        document.body.innerHTML = "Thank you!";
+      }
+    });
+
+    const helloTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+        <p>Hello!</p>
+        <p>You will be taking part in an experiment.
+          You will see colors displayed on screen.</p>
+        <p>Your role will be to press the key corresponding to the FONT color.
+          <b>Please answer as fast as you can!</b></p>
+        <p>Press any key to continue.</p>
+        `
+    };
+
+    let trials = createShuffledListOfTrials(KEYS, NUMBER_OF_TRIALS_PER_KEY, BLANK_DURATION);
+
+    let timeline = [helloTrial];
+    for (let trial of trials){
+      timeline.push(trial);
+    }
+
+    jsPsych.run(timeline);
+  </script>
+</html>
